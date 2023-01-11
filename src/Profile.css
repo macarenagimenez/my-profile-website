@@ -16,22 +16,22 @@
 }
 
 .Hello {
-  width: 200px;
+  width: 35%;
   position: relative;
-  left: 600px;
+  left: 70%;
 }
 
 .Me {
-  width: 400px;
+  width: 60%;
   position: relative;
-  left: 250px;
-  top: 200px;
+  left: 20%;
+  top: 35%;
 }
 .Happyface {
-  width: 100px;
+  width: 20%;
   position: relative;
-  left: 150px;
-  top: 250px;
+  left: 20%;
+  bottom: -50%;
 }
 
 .ImageProfile {
