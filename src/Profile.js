@@ -7,10 +7,14 @@ import Container from "react-bootstrap/Container";
 export default function Profile() {
   return (
     <div className="LandingPage">
-      <div className="Menu">
-        <p>About me</p>
-        <p>Timeline</p>
-      </div>
+      <ul className="Menu">
+        <li>About me</li>
+        <li>Timeline</li>
+        <li>Education</li>
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>Contact Me</li>
+      </ul>
       <Header />
       <Main />
     </div>
