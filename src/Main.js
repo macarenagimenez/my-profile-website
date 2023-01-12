@@ -5,6 +5,7 @@ import {
   faSeedling,
   faCamera,
 } from "@fortawesome/free-solid-svg-icons";
+import Timeline from "./timeline.svg";
 import "./Main.css";
 
 export default function Main() {
@@ -24,7 +25,10 @@ export default function Main() {
           <FontAwesomeIcon icon={faCamera} /> Photographe amateur.
         </p>
       </div>
-      <h1>Timeline!</h1>
+      <div>
+        <h1>Timeline!</h1>
+        <img className="Timeline" src={Timeline} alt="Timeline" />
+      </div>
     </div>
   );
 }
