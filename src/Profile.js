@@ -13,7 +13,7 @@ export default function Profile() {
         <li>Education</li>
         <li>Skills</li>
         <li>Projects</li>
-        <li>Contact Me</li>
+        <li>CONTACT ME</li>
       </ul>
       <Header />
       <Main />
