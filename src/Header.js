@@ -6,16 +6,36 @@ import {
   faHand,
   faSeedling,
   faCamera,
+  faGlasses,
+  faPersonThroughWindow,
 } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css";
+
 export default function Header() {
   return (
     <div className="Header">
       {" "}
       <Row>
+        {" "}
         <Col>
-          <h1>About me</h1>
+          {" "}
+          <img src={require("./hello-01.png")} className="Hello" alt="hello" />
+          <img src={require("./me2-01.png")} className="Me" alt="me" />
+        </Col>
+        <Col xs={5}>
           <div className="Description">
             {" "}
+            <h2>About me</h2> <hr />
+            <p>
+              <FontAwesomeIcon icon={faGlasses} /> Here you’ll find a totaly
+              nerd!! In constant capacitation to learn new and better tools for
+              the technology and my new favorites lenguajes, english and french.
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faPersonThroughWindow} /> I’am a curious
+              person and ready to get into the IT world, but no just that!, also
+              I'am a passionate entrepreneur and a disapointed architect.
+            </p>
             <p>
               <FontAwesomeIcon icon={faHand} /> I'm a creative, responsable and
               commited person. I like to work as a team and solve problems.
@@ -28,24 +48,6 @@ export default function Header() {
               <FontAwesomeIcon icon={faCamera} /> Photographe amateur.
             </p>
           </div>
-        </Col>
-        <Col className="Presentation">
-          {" "}
-          <img src={require("./hello.png")} className="Hello" alt="hello" />
-          <img src={require("./me2.png")} className="Me" alt="me" />
-          <img
-            src={require("./happyface.png")}
-            className="Happyface"
-            alt="emoji"
-          />{" "}
-        </Col>
-        <Col>
-          {" "}
-          <img
-            className="ImageProfile"
-            src={require("./macagimenez.png")}
-            alt="Macarena Gimenez"
-          />
         </Col>
       </Row>
     </div>

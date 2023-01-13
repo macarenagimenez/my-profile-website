@@ -1,5 +1,5 @@
 .Menu {
-  background: #efe3d7;
+  background: #f0be14;
   list-style: none;
   padding-right: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.37);
@@ -12,40 +12,4 @@
 li {
   margin-left: 20px;
   font-weight: bold;
-}
-.Header {
-  max-width: 90%;
-  background-color: #dbe9e9;
-  margin: auto;
-  border-radius: 20px;
-  border: 2px solid #a9acad;
-}
-
-.Presentation {
-  text-align: right;
-  margin-top: 10px;
-}
-
-.Hello {
-  width: 35%;
-  position: relative;
-  left: 70%;
-}
-
-.Me {
-  width: 60%;
-  position: relative;
-  left: 20%;
-  top: 35%;
-}
-.Happyface {
-  width: 20%;
-  position: relative;
-  left: 20%;
-  bottom: -50%;
-}
-
-.ImageProfile {
-  max-width: 100%;
-  border-radius: 20px;
 }

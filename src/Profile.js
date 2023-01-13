@@ -8,7 +8,6 @@ export default function Profile() {
   return (
     <div className="LandingPage">
       <ul className="Menu">
-        <li>About me</li>
         <li>Timeline</li>
         <li>Education</li>
         <li>Skills</li>
