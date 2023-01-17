@@ -1,14 +1,7 @@
 .Header {
-  max-width: 90%;
-  background-color: #dbe9e9;
+  max-width: 70%;
   margin: auto;
-  border-radius: 20px;
-  border: 2px solid #a9acad;
-  /* background: url(./photo4.png); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(./photo05-01.jpg);
-  position: relative;
+  margin-top: 50px;
 }
 
 .Description {
@@ -28,15 +21,18 @@
 }
 
 .Hello {
-  height: 160px;
-  position: relative;
-  left: 400px;
-  top: 50px;
+  max-width: 100%;
 }
 
 .Me {
-  height: 180px;
-  position: relative;
-  left: 60px;
-  top: 300px;
+  max-width: 100%;
+}
+
+.MyPhoto {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 300px;
+  background: #f8afa0;
+  width: 400px;
+  max-width: 100%;
 }

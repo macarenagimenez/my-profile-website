@@ -2,18 +2,24 @@ import React from "react";
 import Header from "./Header.js";
 import Main from "./Main.js";
 import "./Profile.css";
-import Container from "react-bootstrap/Container";
+
+import { Col, Row } from "react-bootstrap";
 
 export default function Profile() {
   return (
-    <div className="LandingPage">
-      <ul className="Menu">
-        <li>Timeline</li>
-        <li>Education</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>CONTACT ME</li>
-      </ul>
+    <div>
+      <Row className="LandingPage sticky-sm-top">
+        <Col className="Name">macu gimenez.</Col>
+        <Col>
+          <ul className="Menu">
+            <li>Timeline</li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>CONTACT ME</li>
+          </ul>
+        </Col>
+      </Row>
       <Header />
       <Main />
     </div>
