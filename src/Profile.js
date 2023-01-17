@@ -12,6 +12,7 @@ export default function Profile() {
         <Col className="Name">macu gimenez.</Col>
         <Col>
           <ul className="Menu">
+            <li>About me</li>
             <li>Timeline</li>
             <li>Education</li>
             <li>Skills</li>

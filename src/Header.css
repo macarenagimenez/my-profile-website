@@ -5,22 +5,28 @@
 }
 
 .Description {
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 100px;
   margin-right: 50px;
   padding: 15px;
   border-radius: 20px;
-  background-color: #ffffff;
-  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+
+  /* box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
   -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35); */
 }
 .Description h2 {
-  text-align: left;
+  text-align: center;
 }
 .Description p {
   font-size: 17px;
-  text-align: left;
+  text-align: center;
+  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  background-color: white;
+  padding: 50px;
+  border-radius: 200px;
 }
 
 .Hello {

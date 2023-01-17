@@ -1,14 +1,10 @@
-.AboutMe {
+.Main {
   margin: 50px 20px;
+  max-width: 90%;
+  margin: auto;
 }
-.AboutMe h1 {
-  display: inline;
-  text-align: left;
-  border-radius: 20px;
-  border: 2px solid #a9acad;
-  font-size: 30px;
-  margin-left: 60px;
-  padding: 10px;
+.Main h2 {
+  text-align: center;
 }
 
 p {
