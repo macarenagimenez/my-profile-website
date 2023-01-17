@@ -60,11 +60,11 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="Header position-relative">
+    <div className="Header ">
       <Row>
         <Col>
           <img
-            src={require("./photo06.png")}
+            src={require("./photo.png")}
             className="MyPhoto"
             alt="MacarenaGimenez"
           />{" "}
