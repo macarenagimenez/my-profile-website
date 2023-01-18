@@ -17,7 +17,7 @@ export default function Profile() {
       />
       <div>
         <Row className="LandingPage sticky-sm-top">
-          <Col className="Name">macu gimenez.</Col>
+          <Col className="Name">MacuGimenez.</Col>
           <Col>
             <ul className="Menu">
               <li>About me</li>

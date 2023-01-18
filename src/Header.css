@@ -5,9 +5,7 @@
 }
 
 .Description {
-  margin-top: 10px;
-  margin-bottom: 100px;
-  margin-right: 50px;
+  margin: auto;
   padding: 15px;
   border-radius: 20px;
 }
