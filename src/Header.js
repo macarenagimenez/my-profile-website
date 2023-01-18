@@ -46,7 +46,7 @@ export default function Header() {
             }}
           >
             <img src={require("./me.png")} className="Me " alt="me" />
-          </motion.div>{" "}
+          </motion.div>
         </Col>
       </Row>
       <div className="Description">

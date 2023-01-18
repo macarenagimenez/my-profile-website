@@ -41,12 +41,3 @@
   max-width: 100%;
   inline-size: -webkit-fill-available;
 }
-
-.box {
-  width: 65%;
-  height: 35%;
-  /* border-radius: 50%; */
-  /* background: black; */
-  /* background-image: url("./hello.png");
-  background-repeat: no-repeat; */
-}
