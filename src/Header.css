@@ -10,10 +10,6 @@
   margin-right: 50px;
   padding: 15px;
   border-radius: 20px;
-
-  /* box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35); */
 }
 .Description h2 {
   text-align: center;
@@ -44,4 +40,13 @@
   background: #f8afa0;
   max-width: 100%;
   inline-size: -webkit-fill-available;
+}
+
+.box {
+  width: 65%;
+  height: 35%;
+  /* border-radius: 50%; */
+  /* background: black; */
+  /* background-image: url("./hello.png");
+  background-repeat: no-repeat; */
 }

@@ -1,4 +1,5 @@
 import React from "react";
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,53 +11,7 @@ import {
   faPersonThroughWindow,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
-
-// export default function Header() {
-//   return (
-//     <div className="Header">
-//       {" "}
-//       <Row>
-//         {" "}
-//         <Col>
-//           <img
-//             src={require("./photo06.png")}
-//             className="MyPhoto"
-//             alt="MacarenaGimenez"
-//           />{" "}
-//           <img src={require("./hello-01.png")} className="Hello" alt="hello" />
-//           <img src={require("./me2-01.png")} className="Me" alt="me" />
-//         </Col>
-//         <Col xs={5}>
-//           <div className="Description">
-//             {" "}
-//             <h2>About me</h2> <hr />
-//             <p>
-//               <FontAwesomeIcon icon={faGlasses} /> Here you’ll find a totaly
-//               nerd!! In constant capacitation to learn new and better tools for
-//               the technology and my new favorites lenguajes, english and french.
-//             </p>
-//             <p>
-//               <FontAwesomeIcon icon={faPersonThroughWindow} /> I’am a curious
-//               person and ready to get into the IT world, but no just that!, also
-//               I'am a passionate entrepreneur and a disapointed architect.
-//             </p>
-//             <p>
-//               <FontAwesomeIcon icon={faHand} /> I'm a creative, responsable and
-//               commited person. I like to work as a team and solve problems.
-//             </p>
-//             <p>
-//               <FontAwesomeIcon icon={faSeedling} /> Vegetarian. I like
-//               travelling, the design and the good food.
-//             </p>
-//             <p>
-//               <FontAwesomeIcon icon={faCamera} /> Photographe amateur.
-//             </p>
-//           </div>
-//         </Col>
-//       </Row>
-//     </div>
-//   );
-// }
+import { motion } from "framer-motion";
 
 export default function Header() {
   return (
@@ -70,8 +25,28 @@ export default function Header() {
           />{" "}
         </Col>
         <Col>
-          <img src={require("./hello.png")} className="Hello " alt="hello" />
-          <img src={require("./me.png")} className="Me " alt="me" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <img src={require("./hello.png")} className="Hello " alt="hello" />
+          </motion.div>{" "}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <img src={require("./me.png")} className="Me " alt="me" />
+          </motion.div>{" "}
         </Col>
       </Row>
       <div className="Description">
