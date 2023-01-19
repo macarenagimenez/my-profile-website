@@ -13,6 +13,42 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Main() {
+  let devSkills = (
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>React</li>
+      <li>GitHub</li>
+      <li>Hosting</li>
+      <li>API</li>
+      <li>VSCode</li>
+      <li>Bootstrap</li>
+    </ul>
+  );
+
+  let softSkills = (
+    <ul>
+      <li>Proactivity</li>
+      <li>Creativity</li>
+      <li>Fast Learned</li>
+      <li>Lidership</li>
+      <li>Design</li>
+      <li>Curious</li>
+      <li>Committed</li>
+    </ul>
+  );
+
+  let otherSkills = (
+    <ul>
+      <li>Illustrator</li>
+      <li>Photoshop</li>
+      <li>3D Max</li>
+      <li>VRay</li>
+      <li>Design</li>
+    </ul>
+  );
+
   return (
     <div className="Main">
       <div className="Timeline">
@@ -72,7 +108,9 @@ export default function Main() {
       </div>
       <div className="Skills">
         <h2>Skills</h2> <hr />
-        <CardExpandable />
+        <CardExpandable name="Developer Skills" text={devSkills} />
+        <CardExpandable name="Soft Skills" text={softSkills} />
+        <CardExpandable name="Other Skills" text={otherSkills} />
       </div>
     </div>
   );
