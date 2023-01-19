@@ -4,7 +4,17 @@
   margin: 10px;
 }
 
+.Card:hover {
+  cursor: pointer;
+}
+
 .Card p {
   padding-top: 5px;
   line-height: 25px;
+}
+
+h3,
+h2 {
+  text-align: center;
+  margin: 0;
 }

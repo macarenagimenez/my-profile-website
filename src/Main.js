@@ -33,7 +33,7 @@ export default function Main() {
       <li>Creativity</li>
       <li>Fast Learned</li>
       <li>Lidership</li>
-      <li>Design</li>
+      <li>Entrepreneur</li>
       <li>Curious</li>
       <li>Committed</li>
     </ul>
@@ -46,6 +46,7 @@ export default function Main() {
       <li>3D Max</li>
       <li>VRay</li>
       <li>Design</li>
+      <li>Photograph</li>
     </ul>
   );
 
@@ -108,9 +109,20 @@ export default function Main() {
       </div>
       <div className="Skills">
         <h2>Skills</h2> <hr />
-        <CardExpandable name="Developer Skills" text={devSkills} />
-        <CardExpandable name="Soft Skills" text={softSkills} />
-        <CardExpandable name="Other Skills" text={otherSkills} />
+        <Row>
+          <Col className="developerSk">
+            <CardExpandable name="Developer Skills" text={devSkills} />
+          </Col>
+          <Col className="softSk">
+            <CardExpandable name="Soft Skills" text={softSkills} />
+          </Col>
+          <Col className="otherSk">
+            <CardExpandable name="Other Skills" text={otherSkills} />
+          </Col>
+        </Row>
+      </div>
+      <div className="Skills">
+        <h2>Projects</h2> <hr />
       </div>
     </div>
   );
