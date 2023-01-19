@@ -42,3 +42,9 @@ a {
 a:hover {
   color: #f0be15;
 }
+
+.Skills {
+  padding-top: 50px;
+  margin: auto;
+  max-width: 80%;
+}

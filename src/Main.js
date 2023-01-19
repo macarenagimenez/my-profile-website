@@ -1,4 +1,5 @@
 import React from "react";
+import CardExpandable from "./CardExpandable.js";
 import Timeline from "./timeline.svg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -34,7 +35,6 @@ export default function Main() {
               </a>
             </p>
           </Col>
-
           <Col>
             <p>
               {" "}
@@ -69,6 +69,10 @@ export default function Main() {
             </p>
           </Col>
         </Row>
+      </div>
+      <div className="Skills">
+        <h2>Skills</h2> <hr />
+        <CardExpandable />
       </div>
     </div>
   );
