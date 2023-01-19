@@ -57,6 +57,7 @@ a:hover {
   min-height: 450px;
   background-position: center;
   margin-right: 10px;
+  margin-top: 50px;
 }
 
 .softSk {
@@ -66,6 +67,7 @@ a:hover {
   min-height: 450px;
   background-position: center;
   margin-right: 10px;
+  margin-top: 50px;
 }
 .otherSk {
   background-image: url("./jess-bailey-q10VITrVYUM-unsplash.jpg");
@@ -74,4 +76,20 @@ a:hover {
   border-radius: 20px;
   min-height: 450px;
   margin-right: 10px;
+  margin-top: 50px;
+}
+
+.projects {
+  margin-top: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+}
+
+.projects p {
+  margin-top: 20px;
+  font-size: 17px;
 }

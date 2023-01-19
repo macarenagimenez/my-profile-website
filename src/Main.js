@@ -3,6 +3,7 @@ import CardExpandable from "./CardExpandable.js";
 import Timeline from "./timeline.svg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
 import "./Main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +11,9 @@ import {
   faBuildingColumns,
   faCode,
   faLanguage,
+  faHandPointer,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Main() {
   let devSkills = (
@@ -123,6 +126,55 @@ export default function Main() {
       </div>
       <div className="Skills">
         <h2>Projects</h2> <hr />
+        <Row>
+          <Col>
+            <div className="projects">
+              <a
+                href="https://shiny-semifreddo-aa62d2.netlify.app//"
+                target="blank_"
+              >
+                <h2>
+                  Weather App <FontAwesomeIcon icon={faHandPointer} />
+                </h2>{" "}
+              </a>
+              <p> A Weather App created for SheCodes with React. </p>
+              <p>
+                {" "}
+                You could see it on{" "}
+                <a
+                  href="https://github.com/macarenagimenez/react-final-project"
+                  target="blank_"
+                >
+                  <FontAwesomeIcon icon={faGithub} /> GitHub.
+                </a>
+              </p>
+            </div>{" "}
+          </Col>
+          <Col>
+            <div className="projects">
+              <a
+                href="https://soft-valkyrie-a6aceb.netlify.app"
+                target="blank_"
+              >
+                <h2>
+                  {" "}
+                  Dictionary App <FontAwesomeIcon icon={faHandPointer} />
+                </h2>{" "}
+              </a>
+              <p> A Dictionary app created for SheCodes with React. </p>
+              <p>
+                {" "}
+                You could see it on{" "}
+                <a
+                  href="https://github.com/macarenagimenez/dictionary-project"
+                  target="blank_"
+                >
+                  <FontAwesomeIcon icon={faGithub} /> GitHub.
+                </a>
+              </p>
+            </div>{" "}
+          </Col>
+        </Row>
       </div>
     </div>
   );
