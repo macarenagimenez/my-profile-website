@@ -65,3 +65,7 @@
   margin-top: 11px;
   margin-left: 20px;
 }
+
+.active {
+  font-weight: bold;
+}

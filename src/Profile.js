@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import Header from "./Header.js";
 import Main from "./Main.js";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -19,23 +20,54 @@ export default function Profile() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <div>
-        <Row className="LandingPage sticky-sm-top">
-          <Col className="Name">MacuGimenez.</Col>
-          <Col>
-            <ul className="Menu">
-              <li>About me</li>
-              <li>Timeline</li>
-              <li>Education</li>
-              <li>Skills</li>
-              <li>Projects</li>
-              <li>CONTACT ME</li>
-            </ul>
-          </Col>
-        </Row>
-        <Header />
-        <Main />
-
+      <div className="LandingPage sticky-sm-top ">
+        <nav>
+          <Row>
+            <Col className="Name">MacuGimenez.</Col>
+            <Col>
+              <ul className="Menu">
+                <li>
+                  {" "}
+                  <Link activeClass="active" spy to="aboutme">
+                    {" "}
+                    About me{" "}
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link activeClass="active" spy to="timeline">
+                    {" "}
+                    Timeline
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link activeClass="active" spy to="education">
+                    Education
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link activeClass="active" spy to="skills">
+                    Skills
+                  </Link>
+                </li>
+                <li>
+                  <Link activeClass="active" spy={true} to="projects">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link to="contact">CONTACT ME </Link>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </nav>
+      </div>
+      <Header />
+      <Main />
+      <section id="contact">
         <Row className="LandingPage">
           <Col className="ContactMe">
             Contact me{" "}
@@ -73,16 +105,16 @@ export default function Profile() {
             </ul>
           </Col>
         </Row>
-        <FloatingWhatsApp
-          phoneNumber="5492657307339"
-          accountName="Macu Gimenez"
-          statusMessage="On Line"
-          avatar={avatar}
-          chatMessage="Hi! Could I help you?"
-          allowEsc
-          allowClickAway
-        />
-      </div>
+      </section>
+      <FloatingWhatsApp
+        phoneNumber="5492657307339"
+        accountName="Macu Gimenez"
+        statusMessage="On Line"
+        avatar={avatar}
+        chatMessage="Hi! Could I help you?"
+        allowEsc
+        allowClickAway
+      />
     </>
   );
 }
