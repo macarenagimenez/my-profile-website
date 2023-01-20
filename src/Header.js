@@ -9,6 +9,7 @@ import {
   faCamera,
   faGlasses,
   faPersonThroughWindow,
+  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import { motion } from "framer-motion";
@@ -51,6 +52,9 @@ export default function Header() {
       </Row>
       <div className="Description">
         {" "}
+        <h2 className="arrow">
+          <FontAwesomeIcon icon={faArrowDown} />
+        </h2>
         <h2>About me</h2> <hr />
         <Row>
           <Col>

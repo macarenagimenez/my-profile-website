@@ -39,3 +39,9 @@
   max-width: 100%;
   inline-size: -webkit-fill-available;
 }
+
+.arrow {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
