@@ -9,18 +9,20 @@
 }
 .Menu {
   list-style: none;
-  padding-right: 10px;
+
   display: flex;
   justify-content: flex-end;
   padding: 10px 20px 10px 10px;
 }
-li {
+.Menu li {
   margin-left: 20px;
   margin-top: 10px;
-  font-weight: 400;
   letter-spacing: 1px;
 }
-
+.Menu li:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
 .progress-bar {
   position: fixed;
   bottom: 0;
@@ -29,4 +31,37 @@ li {
   height: 10px;
   background: #df6730;
   transform-origin: 0%;
+}
+.buttonEmail:hover {
+  cursor: pointer;
+  color: #f0be15;
+}
+
+.Footer {
+  list-style: none;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 20px 10px 10px;
+  padding-left: 0px;
+}
+
+.button {
+  font-size: 16px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.ContactMe {
+  font-weight: 700;
+  font-size: 37px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arrowright {
+  color: white;
+  margin-top: 11px;
+  margin-left: 20px;
 }

@@ -12,6 +12,7 @@ import {
   faCode,
   faLanguage,
   faHandPointer,
+  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -55,10 +56,16 @@ export default function Main() {
 
   return (
     <div className="Main">
+      <h2 className="arrow">
+        <FontAwesomeIcon icon={faArrowDown} />
+      </h2>
       <div className="Timeline">
         <h2>Timeline</h2> <hr />
         <img src={Timeline} alt="Timeline" />
       </div>
+      <h2 className="arrow">
+        <FontAwesomeIcon icon={faArrowDown} />
+      </h2>
       <div className="Education">
         <h2>Education</h2> <hr />
         <Row>
@@ -111,6 +118,10 @@ export default function Main() {
         </Row>
       </div>
       <div className="Skills">
+        {" "}
+        <h2 className="arrow">
+          <FontAwesomeIcon icon={faArrowDown} />
+        </h2>
         <h2>Skills</h2> <hr />
         <Row>
           <Col className="developerSk">
@@ -125,10 +136,15 @@ export default function Main() {
         </Row>
       </div>
       <div className="Skills">
+        {" "}
+        <h2 className="arrow">
+          <FontAwesomeIcon icon={faArrowDown} />
+        </h2>
         <h2>Projects</h2> <hr />
         <Row>
           <Col>
             <div className="projects">
+              {" "}
               <a
                 href="https://shiny-semifreddo-aa62d2.netlify.app//"
                 target="blank_"

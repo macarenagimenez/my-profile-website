@@ -1,13 +1,9 @@
 import React from "react";
 import Header from "./Header.js";
 import Main from "./Main.js";
-import {
-  faGithub,
-  faWhatsapp,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { motion, useScroll } from "framer-motion";
 import "./Profile.css";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -40,12 +36,14 @@ export default function Profile() {
         <Header />
         <Main />
 
-        <Row className="LandingPage sticky-sm-top">
-          <Col className="Name">Contact me!</Col>{" "}
-          <span>(if you like my profile!)</span>
+        <Row className="LandingPage">
+          <Col className="ContactMe">
+            Contact me{" "}
+            <FontAwesomeIcon icon={faArrowRight} className="arrowright" />
+          </Col>{" "}
           <Col>
-            <ul className="Menu">
-              <li>
+            <ul className="Footer">
+              <li className="button">
                 <a
                   href="https://www.linkedin.com/in/maria-macarena-gimenez/"
                   target="blank_"
@@ -54,7 +52,7 @@ export default function Profile() {
                   <FontAwesomeIcon icon={faLinkedin} /> Linkedin
                 </a>
               </li>
-              <li>
+              <li className="button">
                 {" "}
                 <a href="https://github.com/macarenagimenez" target="blank_">
                   {" "}
@@ -62,7 +60,7 @@ export default function Profile() {
                 </a>
               </li>
 
-              <li>
+              <li className="button buttonEmail ">
                 {" "}
                 <div
                   onClick={(e) => {
