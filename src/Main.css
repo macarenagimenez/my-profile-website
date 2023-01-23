@@ -8,6 +8,25 @@
   text-align: center;
 }
 
+.Description {
+  max-width: 80%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 20px;
+}
+.Description h2 {
+  text-align: center;
+}
+.Description p {
+  font-size: 17px;
+  text-align: center;
+  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  background-color: white;
+  padding: 50px;
+  border-radius: 200px;
+}
 p {
   font-size: 20px;
 }
@@ -54,7 +73,7 @@ a:hover {
 }
 
 .developerSk {
-  background-image: url("./rich-tervet-q2GNdFmhxx4-unsplash.jpg");
+  background-image: url("./img/rich-tervet-q2GNdFmhxx4-unsplash.jpg");
   background-size: cover;
   border-radius: 20px;
   min-height: 450px;
@@ -64,7 +83,7 @@ a:hover {
 }
 
 .softSk {
-  background-image: url("./redd-f-PTRzqc_h1r4-unsplash.jpg");
+  background-image: url("./img/redd-f-PTRzqc_h1r4-unsplash.jpg");
   background-size: cover;
   border-radius: 20px;
   min-height: 450px;
@@ -73,7 +92,17 @@ a:hover {
   margin-top: 50px;
 }
 .otherSk {
-  background-image: url("./jess-bailey-q10VITrVYUM-unsplash.jpg");
+  background-image: url("./img/jess-bailey-q10VITrVYUM-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  min-height: 450px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.LanguagesSk {
+  background-image: url("./img/pexels-leeloo-thefirst-5408919.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -102,6 +131,3 @@ a:hover {
   margin-top: 20px;
   font-size: 17px;
 }
-/* section {
-  margin-top: 350px;
-} */

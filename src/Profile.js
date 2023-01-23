@@ -9,7 +9,7 @@ import { motion, useScroll } from "framer-motion";
 import "./Profile.css";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { Col, Row } from "react-bootstrap";
-import avatar from "./avatar.png";
+import avatar from "./img/avatar.png";
 
 export default function Profile() {
   const { scrollYProgress } = useScroll();

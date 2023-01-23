@@ -1,16 +1,6 @@
 import React from "react";
-
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHand,
-  faSeedling,
-  faCamera,
-  faGlasses,
-  faPersonThroughWindow,
-  faArrowDown,
-} from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import { motion } from "framer-motion";
 
@@ -20,7 +10,7 @@ export default function Header() {
       <Row>
         <Col>
           <img
-            src={require("./photo.png")}
+            src={require("./img/photo.png")}
             className="MyPhoto"
             alt="MacarenaGimenez"
           />{" "}
@@ -35,7 +25,11 @@ export default function Header() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <img src={require("./hello.png")} className="Hello " alt="hello" />
+            <img
+              src={require("./img/hello.png")}
+              className="Hello "
+              alt="hello"
+            />
           </motion.div>{" "}
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -46,15 +40,13 @@ export default function Header() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <img src={require("./me.png")} className="Me " alt="me" />
+            <img src={require("./img/me.png")} className="Me " alt="me" />
           </motion.div>
         </Col>
-      </Row>
-
-      <div className="Description">
+      </Row>{" "}
+      {/* <section id="aboutme">
         {" "}
-        <section id="aboutme">
-          {" "}
+        <div className="Description">
           <h2 className="arrow">
             <FontAwesomeIcon icon={faArrowDown} />
           </h2>
@@ -97,8 +89,8 @@ export default function Header() {
               </p>
             </Col>
           </Row>{" "}
-        </section>
-      </div>
+        </div>
+      </section> */}
     </div>
   );
 }

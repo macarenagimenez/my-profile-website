@@ -4,25 +4,6 @@
   margin-top: 50px;
 }
 
-.Description {
-  margin: auto;
-  padding: 15px;
-  border-radius: 20px;
-}
-.Description h2 {
-  text-align: center;
-}
-.Description p {
-  font-size: 17px;
-  text-align: center;
-  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  background-color: white;
-  padding: 50px;
-  border-radius: 200px;
-}
-
 .Hello {
   max-width: 100%;
 }
