@@ -7,6 +7,10 @@
   font-size: 37px;
   margin-left: 20px;
 }
+
+.Name span:hover {
+  cursor: pointer;
+}
 .Menu {
   list-style: none;
 
@@ -68,4 +72,8 @@
 
 .active {
   font-weight: bold;
+  background-color: #eee1d8;
+  padding: 5px;
+  color: #f0be15;
+  border-radius: 8px;
 }

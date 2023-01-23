@@ -30,9 +30,7 @@
 p {
   font-size: 20px;
 }
-.TimelineImg {
-  padding: 60px;
-}
+
 .Education {
   max-width: 80%;
   margin: auto;
@@ -125,9 +123,21 @@ a:hover {
 .secctionProjects {
   max-width: 40%;
   margin: 100px auto;
-  margin-bottom: 180px;
 }
 .projects p {
   margin-top: 20px;
   font-size: 17px;
+}
+
+.Hobbies {
+  max-width: 70%;
+  margin: auto;
+}
+.Hobbies p {
+  text-align: center;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 40px;
 }

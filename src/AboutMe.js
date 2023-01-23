@@ -1,8 +1,6 @@
 import React from "react";
 import {
   faHand,
-  faSeedling,
-  faCamera,
   faGlasses,
   faPersonThroughWindow,
   faArrowDown,
@@ -43,18 +41,6 @@ export default function AboutMe() {
               solve problems.
             </p>
           </Col>
-          {/* <Col>
-            <p>
-              <FontAwesomeIcon icon={faSeedling} />
-              <br></br> Vegetarian. I like travelling, the design and the good
-              food.
-            </p>
-          </Col>
-          <Col>
-            <p>
-              <FontAwesomeIcon icon={faCamera} /> <br></br>Photographe amateur.
-            </p>
-          </Col> */}
         </Row>{" "}
       </div>
     </section>

@@ -23,42 +23,49 @@ export default function Profile() {
       <div className="LandingPage sticky-sm-top ">
         <nav>
           <Row>
-            <Col className="Name">MacuGimenez.</Col>
+            <Col className="Name">
+              <Link to="header">
+                {" "}
+                <span>macu gimenez.</span>
+              </Link>
+            </Col>
             <Col>
               <ul className="Menu">
                 <li>
                   {" "}
                   <Link activeClass="active" spy to="aboutme">
                     {" "}
-                    About me{" "}
+                    ABOUT{" "}
                   </Link>
                 </li>
                 <li>
                   {" "}
                   <Link activeClass="active" spy to="timeline">
                     {" "}
-                    Timeline
+                    TIMELINE
                   </Link>
                 </li>
                 <li>
                   {" "}
                   <Link activeClass="active" spy to="education">
-                    Education
+                    EDUCATION
                   </Link>
                 </li>
                 <li>
                   {" "}
                   <Link activeClass="active" spy to="skills">
-                    Skills
+                    SKILLS
                   </Link>
                 </li>
                 <li>
-                  <Link activeClass="active" spy={true} to="projects">
-                    Projects
+                  <Link activeClass="active" spy to="projects">
+                    PROJECTS
                   </Link>
                 </li>
                 <li>
-                  <Link to="contact">CONTACT ME </Link>
+                  <Link activeClass="active" to="contact" spy>
+                    CONTACT ME{" "}
+                  </Link>
                 </li>
               </ul>
             </Col>
