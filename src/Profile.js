@@ -63,6 +63,11 @@ export default function Profile() {
                   </Link>
                 </li>
                 <li>
+                  <Link activeClass="active" spy to="hobbies">
+                    HOBBIES
+                  </Link>
+                </li>
+                <li>
                   <Link activeClass="active" to="contact" spy>
                     CONTACT ME{" "}
                   </Link>
