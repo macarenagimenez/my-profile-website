@@ -23,7 +23,9 @@ export default function Education() {
           <Col>
             <p>
               {" "}
-              <FontAwesomeIcon icon={faCalendarDays} /> 2009 - 2015
+              <strong>
+                <FontAwesomeIcon icon={faCalendarDays} /> 2009 - 2015
+              </strong>
               <br />
               <FontAwesomeIcon icon={faLanguage} /> Architecture Degree <br />
               <FontAwesomeIcon icon={faBuildingColumns} />{" "}
@@ -36,7 +38,9 @@ export default function Education() {
           <Col>
             <p>
               {" "}
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022 - Nowadays
+              <strong>
+                <FontAwesomeIcon icon={faCalendarDays} /> 2022 - Nowadays
+              </strong>
               <br />
               <FontAwesomeIcon icon={faLanguage} /> Intermediate English +
               Initial French <br />
@@ -53,7 +57,9 @@ export default function Education() {
           <Col>
             <p>
               {" "}
-              <FontAwesomeIcon icon={faCalendarDays} /> 2022
+              <strong>
+                <FontAwesomeIcon icon={faCalendarDays} /> 2022
+              </strong>
               <br />
               <FontAwesomeIcon icon={faCode} /> Front End + React <br />
               <FontAwesomeIcon icon={faBuildingColumns} />{" "}
