@@ -1,6 +1,7 @@
 .ContactMe {
   background-color: #d9e9e8;
-  padding: 280px;
+  /* padding: 280px; */
+  padding: 200px 280px 10px;
 }
 .ContactMe p {
   text-align: center;
@@ -25,4 +26,12 @@
 .buttonEmail:hover {
   cursor: pointer;
   color: #f0be15;
+}
+
+.Author p {
+  font-size: 12px;
+}
+
+.Author {
+  margin-top: 360px;
 }

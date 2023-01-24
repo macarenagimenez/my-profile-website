@@ -13,6 +13,7 @@ import Col from "react-bootstrap/Col";
 export default function Education() {
   return (
     <section id="education">
+      <br></br>
       <div className="Education">
         <h2 className="arrow">
           <FontAwesomeIcon icon={faArrowDown} />

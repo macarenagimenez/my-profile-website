@@ -128,27 +128,3 @@ a:hover {
   margin-top: 20px;
   font-size: 17px;
 }
-
-.Hobbies {
-  max-width: 70%;
-  margin: auto;
-  position: relative;
-}
-.Hobbies p {
-  text-align: right;
-  background-color: #f0c22a;
-  border-radius: 20px;
-  padding: 20px;
-  line-height: 35px;
-}
-
-.photos {
-  background-color: #f8afa0 !important;
-  padding: 0px;
-  margin: 0px;
-  max-width: 600px;
-  text-align: center;
-  position: relative;
-  top: 20%;
-  text-align: left !important;
-}

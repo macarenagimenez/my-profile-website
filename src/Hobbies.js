@@ -10,6 +10,7 @@ import {
   faPlane,
   faCamera,
 } from "@fortawesome/free-solid-svg-icons";
+import "./Hobbies.css";
 
 export default function Hobbies() {
   return (
@@ -18,32 +19,27 @@ export default function Hobbies() {
         <FontAwesomeIcon icon={faArrowDown} />
       </h2>
       <h2>Hobbies</h2> <hr />{" "}
-      <Row>
-        <Col>
-          <div>
-            <p>
-              <FontAwesomeIcon icon={faSeedling} /> I'm vegetarian! <br></br>
-              <FontAwesomeIcon icon={faUtensils} /> I love the good food,
-              especially pasta.<br></br>
-              <FontAwesomeIcon icon={faRulerVertical} /> Fanatic of creative
-              design.
-              <br></br>
-              <FontAwesomeIcon icon={faPlane} /> If it comes to travel, I'm the
-              first one looking for tickets!<br></br>
-              <FontAwesomeIcon icon={faCamera} /> I love making photos, I like
-              seeing everything through my lens.<br></br>
-            </p>
-          </div>
-        </Col>
-        <Col>
-          <p className="photos">
-            {" "}
-            Below you will see a few pictures taken by my camera! <br></br>
-            <FontAwesomeIcon icon={faArrowDown} />
+      <div className="HobbiesDescription">
+        <div>
+          <p>
+            <FontAwesomeIcon icon={faSeedling} /> I'm vegetarian! <br></br>
+            <FontAwesomeIcon icon={faUtensils} /> I love the good food,
+            especially pasta.<br></br>
+            <FontAwesomeIcon icon={faRulerVertical} /> Fanatic of creative
+            design.
+            <br></br>
+            <FontAwesomeIcon icon={faPlane} /> If it comes to travel, I'm the
+            first one looking for tickets!<br></br>
+            <FontAwesomeIcon icon={faCamera} /> I love making photos, I like
+            seeing everything through my lens.<br></br>
           </p>
-        </Col>
-      </Row>
-      <Carousel>
+        </div>
+        <p className="photos">
+          <FontAwesomeIcon icon={faArrowDown} /> Below, you will see a few
+          pictures taken by my camera! <FontAwesomeIcon icon={faArrowDown} />
+        </p>
+      </div>
+      <Carousel className="Carrousel">
         <Carousel.Item>
           <img
             className="d-block w-100"

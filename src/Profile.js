@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import Header from "./Header.js";
 import Main from "./Main.js";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import { motion, useScroll } from "framer-motion";
 import "./Profile.css";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -19,6 +17,7 @@ export default function Profile() {
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
+        sticky-sm-bottom
       />
       <div className="LandingPage sticky-sm-top ">
         <nav>

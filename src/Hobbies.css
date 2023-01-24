@@ -1,0 +1,34 @@
+.Hobbies {
+  max-width: 70%;
+  margin: auto;
+}
+
+.HobbiesDescription {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+.Hobbies p {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 30px;
+  font-size: 16px;
+  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+}
+
+.photos {
+  background-color: #f8afa0 !important;
+  box-shadow: none !important;
+}
+
+.Carrousel {
+  width: 70%;
+  margin: auto;
+}
+
+img {
+  margin-top: 0 !important;
+}

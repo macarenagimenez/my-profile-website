@@ -1,11 +1,7 @@
 import React from "react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faArrowRight,
-  faArrowDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import "./ContactMe.css";
 
 export default function ContactMe() {
@@ -46,6 +42,18 @@ export default function ContactMe() {
             </div>
           </li>
         </ul>
+        <div className="Author">
+          <p>
+            <a href="https://github.com/macarenagimenez/my-profile-website">
+              {" "}
+              Open source code{" "}
+            </a>{" "}
+            by me,{" "}
+            <a href="https://www.linkedin.com/in/maria-macarena-gimenez/">
+              Macu Gimenez.{" "}
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
