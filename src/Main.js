@@ -5,6 +5,7 @@ import Education from "./Education.js";
 import Skills from "./Skills.js";
 import Projects from "./Projects.js";
 import Hobbies from "./Hobbies.js";
+import ContactMe from "./ContactMe.js";
 import "./Main.css";
 
 export default function Main() {
@@ -18,6 +19,7 @@ export default function Main() {
       <Skills />
       <Projects />
       <Hobbies />
+      <ContactMe />
     </div>
   );
 }

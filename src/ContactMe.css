@@ -1,0 +1,28 @@
+.ContactMe {
+  background-color: #d9e9e8;
+  padding: 280px;
+}
+.ContactMe p {
+  text-align: center;
+}
+
+.Footer {
+  list-style: none;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 10px 10px;
+  padding-left: 0px;
+}
+
+.button {
+  font-size: 20px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.buttonEmail:hover {
+  cursor: pointer;
+  color: #f0be15;
+}

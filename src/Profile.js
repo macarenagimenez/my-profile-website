@@ -79,11 +79,12 @@ export default function Profile() {
       </div>
       <Header />
       <Main />
-      <section id="contact">
+      {/* <section id="contact">
         <Row className="LandingPage">
           <Col className="ContactMe">
             Contact me{" "}
             <FontAwesomeIcon icon={faArrowRight} className="arrowright" />
+            <p>If you enjoyed my profile, I can be found on LinkedIn.</p>
           </Col>{" "}
           <Col>
             <ul className="Footer">
@@ -117,7 +118,8 @@ export default function Profile() {
             </ul>
           </Col>
         </Row>
-      </section>
+      </section> */}
+
       <FloatingWhatsApp
         phoneNumber="5492657307339"
         accountName="Macu Gimenez"
