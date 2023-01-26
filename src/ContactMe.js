@@ -50,7 +50,7 @@ export default function ContactMe() {
                 {" "}
                 Open source code{" "}
               </a>{" "}
-              by me,{" "}
+              created by me,{" "}
               <a href="https://www.linkedin.com/in/maria-macarena-gimenez/">
                 Macu Gimenez.{" "}
               </a>
