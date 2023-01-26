@@ -21,7 +21,7 @@ export default function Education() {
         </h2>
         <h2>Education</h2> <hr />
         <Row>
-          <Col>
+          <Col sm={4}>
             <p>
               {" "}
               <strong>
@@ -36,7 +36,7 @@ export default function Education() {
               </a>
             </p>
           </Col>
-          <Col>
+          <Col sm={4}>
             <p>
               {" "}
               <strong>
@@ -55,7 +55,7 @@ export default function Education() {
               </a>
             </p>
           </Col>
-          <Col>
+          <Col sm={4}>
             <p>
               {" "}
               <strong>

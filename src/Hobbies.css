@@ -32,3 +32,21 @@
 img {
   margin-top: 0 !important;
 }
+@media (max-width: 480px) {
+  .Hobbies {
+    max-width: 80%;
+    margin: 50px auto;
+  }
+  .Hobbies p {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+
+  .Carrousel {
+    width: 100%;
+    margin: auto;
+  }
+}

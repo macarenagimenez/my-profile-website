@@ -17,3 +17,13 @@
   margin-top: 20px;
   font-size: 17px;
 }
+@media (max-width: 480px) {
+  .secctionProjects {
+    max-width: 80%;
+    margin: 50px auto;
+  }
+
+  .projects p {
+    font-size: 14px;
+  }
+}

@@ -61,16 +61,16 @@ export default function Skills() {
         </h2>
         <h2>Skills</h2> <hr />
         <Row>
-          <Col className="developerSk">
+          <Col className="developerSk" sm={3}>
             <CardExpandable name="Developer" text={devSkills} />
           </Col>
-          <Col className="softSk">
+          <Col className="softSk" sm={3}>
             <CardExpandable name="Softs" text={softSkills} />
           </Col>
-          <Col className="otherSk">
+          <Col className="otherSk" sm={3}>
             <CardExpandable name="Other" text={otherSkills} />
           </Col>
-          <Col className="LanguagesSk">
+          <Col className="LanguagesSk" sm={3}>
             <CardExpandable name="Languages" text={tongues} />
           </Col>
         </Row>

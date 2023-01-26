@@ -20,6 +20,8 @@
 
 @media (max-width: 480px) {
   .Description p {
-    font-size: 10px;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 20px;
   }
 }

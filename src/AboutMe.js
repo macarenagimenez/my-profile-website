@@ -19,7 +19,7 @@ export default function AboutMe() {
         </h2>
         <h2>About me</h2> <hr />
         <Row>
-          <Col>
+          <Col sm={4}>
             <p>
               <FontAwesomeIcon icon={faGlasses} /> <br></br>Here you’ll find a
               totaly nerd!! In constant capacitation to learn new and better
@@ -27,7 +27,7 @@ export default function AboutMe() {
               and french.
             </p>
           </Col>
-          <Col>
+          <Col sm={4}>
             <p>
               <FontAwesomeIcon icon={faPersonThroughWindow} /> <br></br>I’am a
               curious person and ready to get into the IT world, but no just
@@ -35,7 +35,7 @@ export default function AboutMe() {
               architect.
             </p>
           </Col>
-          <Col>
+          <Col sm={4}>
             <p>
               <FontAwesomeIcon icon={faHand} /> <br></br>I'm a creative,
               responsable and commited person. I like to work as a team and
