@@ -1,0 +1,17 @@
+.Education {
+  max-width: 80%;
+  margin: auto;
+}
+.Education p {
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}

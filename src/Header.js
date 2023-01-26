@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <div className="Header ">
+    <div className="Header">
       <Row>
         <Col>
           <img

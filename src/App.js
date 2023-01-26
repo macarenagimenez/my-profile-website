@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <section id="header">
+      <section id="home">
         <Profile />
       </section>
     </div>

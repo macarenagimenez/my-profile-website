@@ -1,0 +1,19 @@
+.projects {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
+}
+
+.secctionProjects {
+  max-width: 40%;
+  margin: 100px auto;
+}
+.projects p {
+  margin-top: 20px;
+  font-size: 17px;
+}

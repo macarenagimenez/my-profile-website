@@ -35,3 +35,44 @@
 .Author {
   margin-top: 360px;
 }
+
+@media (max-width: 480px) {
+  .ContactMe {
+    padding: 200px 0px 100px 0px;
+  }
+  .Author {
+    margin-top: 0px;
+  }
+
+  .ContactMe h2 {
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .ContactMe hr {
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 50px;
+  }
+  .ContactMe p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .Author p {
+    font-size: 10px;
+  }
+
+  .Footer {
+    list-style: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .Footer li {
+    margin: 0;
+    line-height: 50px;
+  }
+}
