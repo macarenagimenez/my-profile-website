@@ -3,16 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointer, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Projects.css";
+import Arrow from "./reuse_components/Arrow";
 
 export default function Projects() {
   return (
     <section id="projects">
       <div className="secctionProjects">
-        {" "}
-        <h2 className="arrow">
-          <FontAwesomeIcon icon={faArrowDown} />
-        </h2>
-        <h2>Projects</h2> <hr />
+        <Arrow tittle="Projects" />"
         <div className="projects">
           {" "}
           <a

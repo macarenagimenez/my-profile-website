@@ -3,6 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import "./ContactMe.css";
+import Arrow from "./reuse_components/Arrow";
 
 export default function ContactMe() {
   return (
@@ -10,10 +11,7 @@ export default function ContactMe() {
       <br></br>
       <section id="contact">
         <div className="ContactMe">
-          <h2 className="arrow">
-            <FontAwesomeIcon icon={faArrowDown} />
-          </h2>
-          <h2>Contact me </h2> <hr />
+          <Arrow tittle="Contact Me" />"
           <p>If you enjoyed my profile, I can be found on ...</p>
           <ul className="Footer">
             <li className="button">
