@@ -69,25 +69,4 @@ export default function renderSkills(props) {
       <Row>{renderSkills(skills)}</Row>
     </div>
   );
-  // return (
-  //   <section id="skills">
-  //     <div >
-  //       <Arrow tittle="Skills" />
-  //       {/* <Row>
-  //       //   <Col className="developerSk" sm>
-  //       //     <CardExpandable name="Tech" text={devSkills} />
-  //       //   </Col>
-  //       //   <Col className="softSk" sm>
-  //       //     <CardExpandable name="Softs" text={softSkills} />
-  //       //   </Col>
-  //       //   <Col className="otherSk" sm>
-  //       //     <CardExpandable name="Other" text={otherSkills} />
-  //       //   </Col>
-  //       //   <Col className="LanguagesSk" sm>
-  //       //     <CardExpandable name="Languages" text={tongues} />
-  //       //   </Col>
-  //       // </Row> */}
-  //     </div>
-  //   </section>
-  // );
 }

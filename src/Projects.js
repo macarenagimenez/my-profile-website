@@ -1,57 +1,78 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointer, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHandPointer,
+  faSpellCheck,
+  faStore,
+  faTemperatureHalf,
+} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Projects.css";
 import Arrow from "./reuse_components/Arrow";
+import Information from "./reuse_components/Information";
+import Data from "./models/Data.ts";
 
 export default function Projects() {
+  const projects = [
+    new Data(
+      "2022",
+      faTemperatureHalf,
+      "Weather App",
+      "https://shiny-semifreddo-aa62d2.netlify.app//",
+      "A Weather App created for SheCodes with React.",
+      faGithub,
+      "https://github.com/macarenagimenez/react-final-",
+      "You could see it on GitHub"
+    ),
+    new Data(
+      "2022",
+      faSpellCheck,
+      "Dictionary App",
+      "https://soft-valkyrie-a6aceb.netlify.app",
+      "A Dictionary App created for SheCodes with React.",
+      faGithub,
+      "https://github.com/macarenagimenez/dictionary-project",
+      "You could see it on GitHub"
+    ),
+    new Data(
+      "2023",
+      faStore,
+      "Gaia Cirila E-Commerce (building)",
+      "https://mellifluous-clafoutis-5ec563.netlify.app/",
+      "An E-Commerce created for my own business with React.",
+      faGithub,
+      "https://github.com/macarenagimenez/cirila-usuario",
+      "You could see it on GitHub"
+    ),
+  ];
+
+  let renderProjects = (projects) => {
+    let content = [];
+    for (let i = 0; i < projects.length; i++) {
+      content.push(
+        <div>
+          <Information
+            year={projects[i].year}
+            iconName={projects[i].iconName}
+            url={projects[i].url}
+            name={projects[i].name}
+            description={projects[i].description}
+            icon={projects[i].icon}
+            gitHub={projects[i].gitHub}
+            origin={projects[i].origin}
+          />
+        </div>
+      );
+    }
+    return content;
+  };
+
   return (
     <section id="projects">
       <div className="secctionProjects">
-        <Arrow tittle="Projects" />"
-        <div className="projects">
-          {" "}
-          <a
-            href="https://shiny-semifreddo-aa62d2.netlify.app//"
-            target="blank_"
-          >
-            <h2>
-              Weather App <FontAwesomeIcon icon={faHandPointer} />
-            </h2>{" "}
-          </a>
-          <p> A Weather App created for SheCodes with React. </p>
-          <p>
-            {" "}
-            You could see it on{" "}
-            <a
-              href="https://github.com/macarenagimenez/react-final-project"
-              target="blank_"
-            >
-              <FontAwesomeIcon icon={faGithub} /> GitHub.
-            </a>
-          </p>
-        </div>{" "}
-        <div className="projects">
-          <a href="https://soft-valkyrie-a6aceb.netlify.app" target="blank_">
-            <h2>
-              {" "}
-              Dictionary App <FontAwesomeIcon icon={faHandPointer} />
-            </h2>{" "}
-          </a>
-          <p> A Dictionary app created for SheCodes with React. </p>
-          <p>
-            {" "}
-            You could see it on{" "}
-            <a
-              href="https://github.com/macarenagimenez/dictionary-project"
-              target="blank_"
-            >
-              <FontAwesomeIcon icon={faGithub} /> GitHub.
-            </a>
-          </p>
-        </div>{" "}
-      </div>{" "}
+        <Arrow tittle="Projects" />
+        {renderProjects(projects)}
+      </div>
     </section>
   );
 }
