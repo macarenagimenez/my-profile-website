@@ -1,7 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
-  faHandPointer,
   faSpellCheck,
   faStore,
   faTemperatureHalf,
@@ -14,6 +13,16 @@ import Data from "./models/Data.ts";
 
 export default function Projects() {
   const projects = [
+    new Data(
+      "2023",
+      faStore,
+      "Gaia Cirila E-Commerce (building)",
+      "https://mellifluous-clafoutis-5ec563.netlify.app/",
+      "An E-Commerce created for my own business with React.",
+      faGithub,
+      "https://github.com/macarenagimenez/cirila-usuario",
+      "You could see it on GitHub"
+    ),
     new Data(
       "2022",
       faTemperatureHalf,
@@ -32,16 +41,6 @@ export default function Projects() {
       "A Dictionary App created for SheCodes with React.",
       faGithub,
       "https://github.com/macarenagimenez/dictionary-project",
-      "You could see it on GitHub"
-    ),
-    new Data(
-      "2023",
-      faStore,
-      "Gaia Cirila E-Commerce (building)",
-      "https://mellifluous-clafoutis-5ec563.netlify.app/",
-      "An E-Commerce created for my own business with React.",
-      faGithub,
-      "https://github.com/macarenagimenez/cirila-usuario",
       "You could see it on GitHub"
     ),
   ];

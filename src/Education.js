@@ -1,87 +1,86 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
-  faCalendarDays,
   faBuildingColumns,
   faCode,
   faLanguage,
+  faBookOpen,
+  faRuler,
 } from "@fortawesome/free-solid-svg-icons";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 import "./Education.css";
 import Arrow from "./reuse_components/Arrow";
+import Data from "./models/Data.ts";
+import Information from "./reuse_components/Information";
 
 export default function Education() {
+  const education = [
+    new Data(
+      "2022",
+      faCode,
+      "Self taught",
+      null,
+      "In constant self-taugh training",
+      null,
+      " ",
+      " "
+    ),
+    new Data(
+      "2022",
+      faCode,
+      "React",
+      "https://www.shecodes.io/graduates/45759-maria-macarena-gimenez",
+      "React and Javascript",
+      faBuildingColumns,
+      null,
+      "She Codes IO"
+    ),
+    new Data(
+      "2019 - Actuality",
+      faBookOpen,
+      "Maestria en Diseño y Gestión de Sistemas Patrimoniales",
+      "https://faud.unc.edu.ar/maestria-en-diseno-y-gestion-de-sistemas-patrimoniales/",
+      "Master's degree in cultural project management.",
+      faBuildingColumns,
+      null,
+      "Universidad Nacional de Córdoba"
+    ),
+    new Data(
+      "2009 - 2015",
+      faRuler,
+      "Architecture",
+      "https://faud.unc.edu.ar",
+      "Architecture degree",
+      faBuildingColumns,
+      null,
+      "Universidad Nacional de Córdoba"
+    ),
+  ];
+
+  const renderEducation = (education) => {
+    const content = [];
+    for (let i = 0; i < education.length; i++) {
+      content.push(
+        <Information
+          year={education[i].year}
+          iconName={education[i].iconName}
+          url={education[i].url}
+          name={education[i].name}
+          description={education[i].description}
+          icon={education[i].icon}
+          gitHub={education[i].gitHub}
+          origin={education[i].origin}
+        />
+      );
+    }
+    return content;
+  };
+
   return (
     <section id="education">
-      <br></br>
-      <div className="Education">
+      <div className="secctionProjects">
         <Arrow tittle="Education" />
-
-        <Row>
-          <Col sm={3}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> 2009 - 2015
-              </strong>
-              <br />
-              <br />
-              <FontAwesomeIcon icon={faLanguage} /> Architecture Degree <br />
-              <FontAwesomeIcon icon={faBuildingColumns} />{" "}
-              <a href="https://faud.unc.edu.ar/" target="blank_">
-                {" "}
-                Universidad Nacional de Córdoba. Argentina.
-              </a>
-            </p>
-          </Col>
-          <Col sm={3}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> 2020 - Actuality
-              </strong>
-              <br /> <br />
-              <FontAwesomeIcon icon={faLanguage} /> Maestria en Sistemas
-              Patrimoniales <br />
-              <FontAwesomeIcon icon={faBuildingColumns} />{" "}
-              <a href="https://faud.unc.edu.ar/" target="blank_">
-                {" "}
-                Universidad Nacional de Córdoba. Argentina.
-              </a>
-            </p>
-          </Col>
-          <Col sm={3}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> 2022
-              </strong>
-              <br /> <br />
-              <FontAwesomeIcon icon={faCode} /> React Course <br />
-              <FontAwesomeIcon icon={faBuildingColumns} />{" "}
-              <a
-                href="https://www.shecodes.io/graduates/45759-maria-macarena-gimenez"
-                target="blank_"
-              >
-                {" "}
-                SheCodes IO.
-              </a>
-            </p>
-          </Col>
-          <Col sm={3}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> Actuality
-              </strong>
-              <br /> <br />
-              <FontAwesomeIcon icon={faCode} /> Self taught <br />
-              <FontAwesomeIcon icon={faBuildingColumns} /> In constant
-              self-taught training
-            </p>
-          </Col>
-        </Row>
+        {renderEducation(education)}
       </div>
     </section>
   );

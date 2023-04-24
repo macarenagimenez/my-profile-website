@@ -15,8 +15,8 @@ export default function Main() {
       <br></br>
       <AboutMe />
       <LineaDeTiempo />
-      <Skills />
       <Projects />
+      <Skills />
       <Education />
       <Hobbies />
       <ContactMe />
