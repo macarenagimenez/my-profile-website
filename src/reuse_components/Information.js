@@ -4,10 +4,11 @@ import {
   faCalendarDays,
   faHandPointRight,
 } from "@fortawesome/free-solid-svg-icons";
+import "./Information.css";
 
 export default function Information(props) {
   return (
-    <div>
+    <div className="">
       <p>
         {" "}
         <strong>
@@ -28,7 +29,6 @@ export default function Information(props) {
           {props.origin}{" "}
         </a>
       </p>
-      <hr />
     </div>
   );
 }

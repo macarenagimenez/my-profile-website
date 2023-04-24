@@ -1,0 +1,11 @@
+.renderInformation {
+  border: 0.5px solid grey;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px 0 0 20px;
+}
+
+.sectionInformation {
+  max-width: 70%;
+  margin: 0 auto;
+}

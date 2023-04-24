@@ -10,7 +10,7 @@ import "./Projects.css";
 import Arrow from "./reuse_components/Arrow";
 import Information from "./reuse_components/Information";
 import Data from "./models/Data.ts";
-
+import { Col, Row } from "react-bootstrap";
 export default function Projects() {
   const projects = [
     new Data(
@@ -49,7 +49,7 @@ export default function Projects() {
     let content = [];
     for (let i = 0; i < projects.length; i++) {
       content.push(
-        <div>
+        <Col className="renderInformation">
           <Information
             year={projects[i].year}
             iconName={projects[i].iconName}
@@ -60,7 +60,7 @@ export default function Projects() {
             gitHub={projects[i].gitHub}
             origin={projects[i].origin}
           />
-        </div>
+        </Col>
       );
     }
     return content;
@@ -68,9 +68,10 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <div className="secctionProjects">
+      <div className="sectionInformation">
         <Arrow tittle="Projects" />
-        {renderProjects(projects)}
+
+        <Row>{renderProjects(projects)}</Row>
       </div>
     </section>
   );

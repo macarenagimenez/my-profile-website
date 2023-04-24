@@ -6,6 +6,7 @@ import Skills from "./renderSkills.js";
 import Projects from "./Projects.js";
 import Hobbies from "./Hobbies.js";
 import ContactMe from "./ContactMe.js";
+import Experience from "./Experience.js";
 import "./Main.css";
 
 export default function Main() {
@@ -16,6 +17,7 @@ export default function Main() {
       <AboutMe />
       <LineaDeTiempo />
       <Projects />
+      <Experience />
       <Skills />
       <Education />
       <Hobbies />

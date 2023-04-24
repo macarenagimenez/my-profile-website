@@ -7,7 +7,7 @@ import {
   faBookOpen,
   faRuler,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Col, Row } from "react-bootstrap";
 import "./Education.css";
 import Arrow from "./reuse_components/Arrow";
 import Data from "./models/Data.ts";
@@ -61,16 +61,18 @@ export default function Education() {
     const content = [];
     for (let i = 0; i < education.length; i++) {
       content.push(
-        <Information
-          year={education[i].year}
-          iconName={education[i].iconName}
-          url={education[i].url}
-          name={education[i].name}
-          description={education[i].description}
-          icon={education[i].icon}
-          gitHub={education[i].gitHub}
-          origin={education[i].origin}
-        />
+        <Col className="renderInformation">
+          <Information
+            year={education[i].year}
+            iconName={education[i].iconName}
+            url={education[i].url}
+            name={education[i].name}
+            description={education[i].description}
+            icon={education[i].icon}
+            gitHub={education[i].gitHub}
+            origin={education[i].origin}
+          />
+        </Col>
       );
     }
     return content;
@@ -78,9 +80,9 @@ export default function Education() {
 
   return (
     <section id="education">
-      <div className="secctionProjects">
+      <div className="sectionInformation">
         <Arrow tittle="Education" />
-        {renderEducation(education)}
+        <Row>{renderEducation(education)}</Row>
       </div>
     </section>
   );
