@@ -8,7 +8,6 @@ import "./Information.css";
 
 export default function Information(props) {
   const urlPhoto = props.img;
-  console.log(urlPhoto);
 
   if (props.img) {
     return (

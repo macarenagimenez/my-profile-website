@@ -45,7 +45,7 @@ export default function renderSkills(props) {
     let content = [];
     for (let i = 0; i < skills.length; i++) {
       content.push(
-        <Col className={skills[i].class} sm>
+        <Col className={skills[i].class} sm key={i}>
           <CardExpandable name={skills[i].name} text={skills[i].text} />
         </Col>
       );

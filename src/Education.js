@@ -3,7 +3,6 @@ import React from "react";
 import {
   faBuildingColumns,
   faCode,
-  faLanguage,
   faBookOpen,
   faRuler,
 } from "@fortawesome/free-solid-svg-icons";
