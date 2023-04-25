@@ -63,7 +63,7 @@ export default function Experience() {
     const content = [];
     for (let i = 0; i < experiences.length; i++) {
       content.push(
-        <Col className="renderInformation">
+        <Col className="renderInformation" sm>
           <Information
             year={experiences[i].year}
             img={experiences[i].img}

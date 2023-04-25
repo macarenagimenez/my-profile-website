@@ -52,7 +52,7 @@ export default function Projects() {
     let content = [];
     for (let i = 0; i < projects.length; i++) {
       content.push(
-        <Col className="renderInformation">
+        <Col className="renderInformation" sm>
           <Information
             year={projects[i].year}
             iconName={projects[i].iconName}

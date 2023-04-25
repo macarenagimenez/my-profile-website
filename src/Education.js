@@ -64,7 +64,7 @@ export default function Education() {
     const content = [];
     for (let i = 0; i < educations.length; i++) {
       content.push(
-        <Col className="renderInformation">
+        <Col className="renderInformation" sm>
           <Information
             year={educations[i].year}
             iconName={educations[i].iconName}
