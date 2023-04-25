@@ -1,23 +1,25 @@
 .Skills {
   padding-top: 50px;
   margin: auto;
-  max-width: 85%;
+  max-width: 70%;
   min-height: 450px;
+  margin-bottom: 50px;
 }
 
 .developerSk {
-  background-image: url("./img/rich-tervet-q2GNdFmhxx4-unsplash.jpg");
-  background-size: cover;
+  background-image: url("./img/tech.png");
+  border: 0.5px solid grey;
   border-radius: 20px;
-  min-height: 450px;
+
   background-position: center;
   margin-right: 10px;
   margin-top: 50px;
 }
 
 .softSk {
-  background-image: url("./img/redd-f-PTRzqc_h1r4-unsplash.jpg");
-  background-size: cover;
+  background-image: url("./img/soft.png");
+  border: 0.5px solid grey;
+
   border-radius: 20px;
   min-height: 450px;
   background-position: center;
@@ -25,9 +27,9 @@
   margin-top: 50px;
 }
 .otherSk {
-  background-image: url("./img/jess-bailey-q10VITrVYUM-unsplash.jpg");
+  background-image: url("./img/language.png");
   background-position: center;
-  background-size: cover;
+
   border-radius: 20px;
   min-height: 450px;
   margin-right: 10px;
@@ -35,9 +37,10 @@
 }
 
 .LanguagesSk {
-  background-image: url("./img/pexels-leeloo-thefirst-5408919.jpg");
+  background-image: url("./img/language.png");
+  border: 0.5px solid grey;
   background-position: center;
-  background-size: cover;
+
   border-radius: 20px;
   min-height: 450px;
   margin-right: 10px;

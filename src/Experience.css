@@ -1,0 +1,8 @@
+.photo {
+  width: 100px;
+  border-radius: 50%;
+  float: right;
+  overflow: auto;
+  margin: 0;
+  border: 5px solid white;
+}

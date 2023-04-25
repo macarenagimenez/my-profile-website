@@ -1,79 +1,91 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
-  faCalendarDays,
   faBuildingColumns,
   faCode,
-  faLanguage,
-  faArrowDown,
+  faBookOpen,
+  faRuler,
 } from "@fortawesome/free-solid-svg-icons";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Col, Row } from "react-bootstrap";
 import "./Education.css";
+import Arrow from "./reuse_components/Arrow";
+import Data from "./models/Data.ts";
+import Information from "./reuse_components/Information";
 
 export default function Education() {
+  const educations = [
+    new Data(
+      "2022",
+      null,
+      faCode,
+      "Self taught",
+      null,
+      "In constant self-taugh training",
+      null,
+      " ",
+      " "
+    ),
+    new Data(
+      "2022",
+      null,
+      faCode,
+      "React",
+      "https://www.shecodes.io/graduates/45759-maria-macarena-gimenez",
+      "React and Javascript",
+      faBuildingColumns,
+      null,
+      "She Codes IO"
+    ),
+    new Data(
+      "2019 - Actuality",
+      null,
+      faBookOpen,
+      "Maestria en Diseño y Gestión de Sistemas Patrimoniales",
+      "https://faud.unc.edu.ar/maestria-en-diseno-y-gestion-de-sistemas-patrimoniales/",
+      "Master's degree in cultural project management.",
+      faBuildingColumns,
+      null,
+      "Universidad Nacional de Córdoba"
+    ),
+    new Data(
+      "2009 - 2015",
+      null,
+      faRuler,
+      "Architecture",
+      "https://faud.unc.edu.ar",
+      "Architecture degree",
+      faBuildingColumns,
+      null,
+      "Universidad Nacional de Córdoba"
+    ),
+  ];
+
+  const renderEducation = (educations) => {
+    const content = [];
+    for (let i = 0; i < educations.length; i++) {
+      content.push(
+        <Col className="renderInformation">
+          <Information
+            year={educations[i].year}
+            iconName={educations[i].iconName}
+            url={educations[i].url}
+            name={educations[i].name}
+            description={educations[i].description}
+            icon={educations[i].icon}
+            gitHub={educations[i].gitHub}
+            origin={educations[i].origin}
+          />
+        </Col>
+      );
+    }
+    return content;
+  };
+
   return (
     <section id="education">
-      <br></br>
-      <div className="Education">
-        <h2 className="arrow">
-          <FontAwesomeIcon icon={faArrowDown} />
-        </h2>
-        <h2>Education</h2> <hr />
-        <Row>
-          <Col sm={4}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> 2009 - 2015
-              </strong>
-              <br />
-              <FontAwesomeIcon icon={faLanguage} /> Architecture Degree <br />
-              <FontAwesomeIcon icon={faBuildingColumns} />{" "}
-              <a href="https://faud.unc.edu.ar/" target="blank_">
-                {" "}
-                Universidad Nacional de Córdoba. Argentina.
-              </a>
-            </p>
-          </Col>
-          <Col sm={4}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> 2022 - Nowadays
-              </strong>
-              <br />
-              <FontAwesomeIcon icon={faLanguage} /> Intermediate English +
-              Initial French <br />
-              <FontAwesomeIcon icon={faBuildingColumns} />{" "}
-              <a
-                href="https://www.facebook.com/institutovoyage"
-                target="blank_"
-              >
-                {" "}
-                Voyage Institute, Villa Mercedes, San Luis, Argentina.
-              </a>
-            </p>
-          </Col>
-          <Col sm={4}>
-            <p>
-              {" "}
-              <strong>
-                <FontAwesomeIcon icon={faCalendarDays} /> 2022
-              </strong>
-              <br />
-              <FontAwesomeIcon icon={faCode} /> Front End + React <br />
-              <FontAwesomeIcon icon={faBuildingColumns} />{" "}
-              <a
-                href="https://www.shecodes.io/graduates/45759-maria-macarena-gimenez"
-                target="blank_"
-              >
-                {" "}
-                SheCodes Plus and SheCodes React.
-              </a>
-            </p>
-          </Col>
-        </Row>
+      <div className="sectionInformation">
+        <Arrow tittle="Education" />
+        <Row>{renderEducation(educations)}</Row>
       </div>
     </section>
   );

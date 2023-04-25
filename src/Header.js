@@ -44,7 +44,6 @@ export default function Header() {
           </motion.div>
         </Col>
       </Row>{" "}
-      <h4>"I love the chance to make new things."</h4>
     </div>
   );
 }

@@ -1,9 +1,14 @@
-.Description {
+.AboutMe {
   max-width: 80%;
   margin: auto;
   padding: 15px;
   border-radius: 20px;
 }
+
+.Description {
+  margin: 10px;
+}
+
 .Description h2 {
   text-align: center;
 }

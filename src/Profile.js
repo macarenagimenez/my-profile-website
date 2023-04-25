@@ -48,13 +48,13 @@ export default function Profile() {
                   {" "}
                   TIMELINE
                 </Link>{" "}
-              </Nav.Link>
+              </Nav.Link>{" "}
               <Nav.Link>
                 {" "}
-                <Link activeClass="active" spy to="education">
-                  EDUCATION
+                <Link activeClass="active" spy to="projects">
+                  PROJECTS & EXPERIENCE
                 </Link>{" "}
-              </Nav.Link>
+              </Nav.Link>{" "}
               <Nav.Link>
                 {" "}
                 <Link activeClass="active" spy to="skills">
@@ -63,8 +63,8 @@ export default function Profile() {
               </Nav.Link>
               <Nav.Link>
                 {" "}
-                <Link activeClass="active" spy to="projects">
-                  PROJECTS
+                <Link activeClass="active" spy to="education">
+                  EDUCATION
                 </Link>{" "}
               </Nav.Link>
               <Nav.Link>

@@ -10,14 +10,13 @@ import {
   faCamera,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Hobbies.css";
+import Arrow from "./reuse_components/Arrow";
 
 export default function Hobbies() {
   return (
     <section id="hobbies" className="Hobbies">
-      <h2 className="arrow">
-        <FontAwesomeIcon icon={faArrowDown} />
-      </h2>
-      <h2>Hobbies</h2> <hr />{" "}
+      <Arrow tittle="Hobbies" />
+
       <div className="HobbiesDescription">
         <div>
           <p>
