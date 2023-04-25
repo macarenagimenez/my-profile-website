@@ -2,6 +2,7 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 export default class Data {
   year: string;
+  img: string;
   iconName: IconDefinition;
   name: string;
   url: string;
@@ -12,6 +13,7 @@ export default class Data {
 
   constructor(
     year: string,
+    img: string,
     iconName: IconDefinition,
     name: string,
     url: string,
@@ -21,6 +23,7 @@ export default class Data {
     origin: string
   ) {
     this.year = year;
+    this.img = img;
     this.iconName = iconName;
     this.name = name;
     this.url = url;

@@ -15,6 +15,7 @@ export default function Projects() {
   const projects = [
     new Data(
       "2023",
+      null,
       faStore,
       "Gaia Cirila E-Commerce (building)",
       "https://mellifluous-clafoutis-5ec563.netlify.app/",
@@ -25,6 +26,7 @@ export default function Projects() {
     ),
     new Data(
       "2022",
+      null,
       faTemperatureHalf,
       "Weather App",
       "https://shiny-semifreddo-aa62d2.netlify.app//",
@@ -35,6 +37,7 @@ export default function Projects() {
     ),
     new Data(
       "2022",
+      null,
       faSpellCheck,
       "Dictionary App",
       "https://soft-valkyrie-a6aceb.netlify.app",

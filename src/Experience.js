@@ -9,10 +9,13 @@ import {
   faStore,
   faRuler,
 } from "@fortawesome/free-solid-svg-icons";
+import "./Experience.css";
+
 export default function Experience() {
-  const experience = [
+  const experiences = [
     new Data(
       "2023 - Actuality",
+      null,
       faCode,
       "Freelance Front-End",
       null,
@@ -23,6 +26,7 @@ export default function Experience() {
     ),
     new Data(
       "2019 - 2022",
+      "images/cirila.jpg",
       faStore,
       "Owner in Gaia Cirila",
       "https://www.instagram.com/gaia.cirila",
@@ -33,6 +37,7 @@ export default function Experience() {
     ),
     new Data(
       "2017 - 2020",
+      "images/obra.jpg",
       faRuler,
       "Independent Architect",
       null,
@@ -43,6 +48,7 @@ export default function Experience() {
     ),
     new Data(
       "2015 - 2017",
+      "images/secretaria.jpg",
       faRuler,
       "Architect on Infrastructure",
       null,
@@ -53,21 +59,22 @@ export default function Experience() {
     ),
   ];
 
-  const renderExperience = (experience) => {
+  const renderExperience = (experiences) => {
     const content = [];
-    for (let i = 0; i < experience.length; i++) {
+    for (let i = 0; i < experiences.length; i++) {
       content.push(
         <Col className="renderInformation">
           <Information
-            year={experience[i].year}
-            iconName={experience[i].iconName}
-            url={experience[i].url}
-            name={experience[i].name}
-            description={experience[i].description}
-            icon={experience[i].icon}
-            gitHub={experience[i].gitHub}
-            origin={experience[i].origin}
-          />
+            year={experiences[i].year}
+            img={experiences[i].img}
+            iconName={experiences[i].iconName}
+            url={experiences[i].url}
+            name={experiences[i].name}
+            description={experiences[i].description}
+            icon={experiences[i].icon}
+            gitHub={experiences[i].gitHub}
+            origin={experiences[i].origin}
+          />{" "}
         </Col>
       );
     }
@@ -78,7 +85,7 @@ export default function Experience() {
     <section id="#">
       <div className="sectionInformation">
         <Arrow tittle="Experience" />
-        <Row>{renderExperience(experience)}</Row>
+        <Row>{renderExperience(experiences)} </Row>
       </div>
     </section>
   );

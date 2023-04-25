@@ -14,9 +14,10 @@ import Data from "./models/Data.ts";
 import Information from "./reuse_components/Information";
 
 export default function Education() {
-  const education = [
+  const educations = [
     new Data(
       "2022",
+      null,
       faCode,
       "Self taught",
       null,
@@ -27,6 +28,7 @@ export default function Education() {
     ),
     new Data(
       "2022",
+      null,
       faCode,
       "React",
       "https://www.shecodes.io/graduates/45759-maria-macarena-gimenez",
@@ -37,6 +39,7 @@ export default function Education() {
     ),
     new Data(
       "2019 - Actuality",
+      null,
       faBookOpen,
       "Maestria en Diseño y Gestión de Sistemas Patrimoniales",
       "https://faud.unc.edu.ar/maestria-en-diseno-y-gestion-de-sistemas-patrimoniales/",
@@ -47,6 +50,7 @@ export default function Education() {
     ),
     new Data(
       "2009 - 2015",
+      null,
       faRuler,
       "Architecture",
       "https://faud.unc.edu.ar",
@@ -57,20 +61,20 @@ export default function Education() {
     ),
   ];
 
-  const renderEducation = (education) => {
+  const renderEducation = (educations) => {
     const content = [];
-    for (let i = 0; i < education.length; i++) {
+    for (let i = 0; i < educations.length; i++) {
       content.push(
         <Col className="renderInformation">
           <Information
-            year={education[i].year}
-            iconName={education[i].iconName}
-            url={education[i].url}
-            name={education[i].name}
-            description={education[i].description}
-            icon={education[i].icon}
-            gitHub={education[i].gitHub}
-            origin={education[i].origin}
+            year={educations[i].year}
+            iconName={educations[i].iconName}
+            url={educations[i].url}
+            name={educations[i].name}
+            description={educations[i].description}
+            icon={educations[i].icon}
+            gitHub={educations[i].gitHub}
+            origin={educations[i].origin}
           />
         </Col>
       );
@@ -82,7 +86,7 @@ export default function Education() {
     <section id="education">
       <div className="sectionInformation">
         <Arrow tittle="Education" />
-        <Row>{renderEducation(education)}</Row>
+        <Row>{renderEducation(educations)}</Row>
       </div>
     </section>
   );

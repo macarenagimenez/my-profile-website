@@ -30,9 +30,9 @@ export default function CardExpandable(props) {
         }}
       >
         <motion.h3 layout="position">{props.name}</motion.h3>{" "}
-        <motion.h4 layout="position">
+        <motion.h6 layout="position">
           <FontAwesomeIcon icon={faChevronDown} />
-        </motion.h4>
+        </motion.h6>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}

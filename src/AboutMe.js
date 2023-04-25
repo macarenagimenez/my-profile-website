@@ -38,7 +38,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div id="AboutMe" className="AboutMe">
+      <div id="aboutme" className="AboutMe">
         <Arrow tittle="About Me" />
         <div>
           <Row className="Description">{renderDescription}</Row>

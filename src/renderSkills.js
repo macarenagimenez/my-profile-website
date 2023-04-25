@@ -8,7 +8,7 @@ import Arrow from "./reuse_components/Arrow.js";
 export default function renderSkills(props) {
   let skills = [
     {
-      name: "Tech",
+      name: "Programming",
       text: [
         "React",
         "Javascript",
@@ -29,21 +29,11 @@ export default function renderSkills(props) {
         "Fast Learned",
         "Lidership",
         "Comunication",
+        "Teamwork",
       ],
       class: "softSk",
     },
-    {
-      name: "Other",
-      text: [
-        "Design Graphic",
-        "Social Media",
-        "Photography",
-        "Market Reserch",
-        "Marketing",
-        "Teamwork",
-      ],
-      class: "otherSk",
-    },
+
     {
       name: "Languages",
       text: ["Spanish Native", "English Intermediate", "French Initial"],
@@ -64,7 +54,7 @@ export default function renderSkills(props) {
   };
 
   return (
-    <div className="Skills">
+    <div className="Skills" id="skills">
       <Arrow tittle="Skills" />
       <Row>{renderSkills(skills)}</Row>
     </div>

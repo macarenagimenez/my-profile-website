@@ -7,28 +7,65 @@ import {
 import "./Information.css";
 
 export default function Information(props) {
-  return (
-    <div className="">
-      <p>
+  const urlPhoto = props.img;
+  console.log(urlPhoto);
+
+  if (props.img) {
+    return (
+      <div className="">
         {" "}
-        <strong>
-          <FontAwesomeIcon icon={faCalendarDays} /> {props.year} <br />
-          <FontAwesomeIcon icon={props.iconName} />
-          <a href={props.url} target="blank">
-            {" "}
-            {props.name}
-          </a>
-        </strong>
-        <br />
-        <br />
-        <FontAwesomeIcon icon={faHandPointRight} /> {props.description}
-        <br />
-        <FontAwesomeIcon icon={props.icon} />{" "}
-        <a href={props.gitHub} target="blank">
+        <img src={urlPhoto} alt={props.name} className="photo" />
+        <p>
           {" "}
-          {props.origin}{" "}
-        </a>
-      </p>
-    </div>
-  );
+          <strong>
+            <FontAwesomeIcon icon={faCalendarDays} /> {props.year}
+            <br />
+            <hr />
+            <FontAwesomeIcon icon={props.iconName} />
+            <a href={props.url} target="blank">
+              {" "}
+              {props.name}
+            </a>
+          </strong>{" "}
+          <br />
+          <br />
+          <FontAwesomeIcon icon={faHandPointRight} /> {props.description}
+          <br />
+          <FontAwesomeIcon icon={props.icon} />{" "}
+          <a href={props.gitHub} target="blank">
+            {" "}
+            {props.origin}{" "}
+          </a>
+        </p>
+      </div>
+    );
+  } else {
+    return (
+      <div className="">
+        {" "}
+        <p>
+          {" "}
+          <strong>
+            <FontAwesomeIcon icon={faCalendarDays} /> {props.year}
+            <br />
+            <hr />
+            <FontAwesomeIcon icon={props.iconName} />
+            <a href={props.url} target="blank">
+              {" "}
+              {props.name}
+            </a>
+          </strong>{" "}
+          <br />
+          <br />
+          <FontAwesomeIcon icon={faHandPointRight} /> {props.description}
+          <br />
+          <FontAwesomeIcon icon={props.icon} />{" "}
+          <a href={props.gitHub} target="blank">
+            {" "}
+            {props.origin}{" "}
+          </a>
+        </p>
+      </div>
+    );
+  }
 }
