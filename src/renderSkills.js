@@ -11,7 +11,6 @@ export default function RenderSkills(props) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     amount: "some",
-    once: true,
   });
 
   let skills = [
