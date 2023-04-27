@@ -10,8 +10,15 @@ import {
   faRuler,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Experience.css";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Experience() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: "all",
+    once: true,
+  });
   const experiences = [
     new Data(
       "2023 - Actuality",
@@ -82,10 +89,18 @@ export default function Experience() {
   };
 
   return (
-    <section id="#">
+    <section id="#" ref={ref}>
       <div className="sectionInformation">
         <Arrow tittle="Experience" />
-        <Row>{renderExperience(experiences)} </Row>
+        <div
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <Row>{renderExperience(experiences)} </Row>
+        </div>
       </div>
     </section>
   );

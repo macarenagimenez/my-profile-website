@@ -11,7 +11,15 @@ import Arrow from "./reuse_components/Arrow";
 import Information from "./reuse_components/Information";
 import Data from "./models/Data.ts";
 import { Col, Row } from "react-bootstrap";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 export default function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: "all",
+    once: true,
+  });
+
   const projects = [
     new Data(
       "2023",
@@ -70,11 +78,18 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" ref={ref}>
       <div className="sectionInformation">
         <Arrow tittle="Projects" />
-
-        <Row>{renderProjects(projects)}</Row>
+        <div
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <Row>{renderProjects(projects)}</Row>
+        </div>
       </div>
     </section>
   );

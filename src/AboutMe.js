@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   faHand,
   faGlasses,
@@ -8,8 +9,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "react-bootstrap";
 import "./AboutMe.css";
 import Arrow from "./reuse_components/Arrow.js";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function AboutMe() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: "all",
+    once: true,
+  });
+
   const description = [
     {
       icon: faGlasses,
@@ -38,12 +48,35 @@ export default function AboutMe() {
 
   return (
     <>
-      <div id="aboutme" className="AboutMe">
-        <Arrow tittle="About Me" />
-        <div>
-          <Row className="Description">{renderDescription}</Row>
-        </div>
-      </div>
+      {" "}
+      <section ref={ref}>
+        {/* <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+
+              stiffness: 100,
+            },
+          }}
+        > */}
+        <div id="aboutme" className="AboutMe">
+          <Arrow tittle="About Me" />
+          <div
+            style={{
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            <Row className="Description">{renderDescription}</Row>{" "}
+          </div>
+        </div>{" "}
+        {/* </motion.div>{" "} */}
+      </section>
     </>
   );
 }

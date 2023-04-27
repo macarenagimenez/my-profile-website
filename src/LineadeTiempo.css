@@ -1,3 +1,13 @@
+.Timeline {
+  width: 70%;
+  margin: 0 auto;
+}
+
 img {
   margin-bottom: 20px;
+  display: inline;
+}
+
+.scrollingHorizontal {
+  overflow-x: auto;
 }
