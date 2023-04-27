@@ -17,8 +17,7 @@ import { useRef } from "react";
 export default function Education() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: "all",
-    once: true,
+    amount: "some",
   });
 
   const educations = [

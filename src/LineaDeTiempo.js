@@ -9,8 +9,7 @@ import { useInView } from "framer-motion";
 export default function LineadeTiempo() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: "all",
-    once: true,
+    amount: "some",
   });
 
   return (

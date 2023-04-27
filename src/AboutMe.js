@@ -17,7 +17,6 @@ export default function AboutMe() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     amount: "some",
-    once: true,
   });
 
   const description = [
