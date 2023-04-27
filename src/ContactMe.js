@@ -4,13 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./ContactMe.css";
 import Arrow from "./reuse_components/Arrow";
-
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 export default function ContactMe() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: "some",
+  });
   return (
     <>
       <br></br>
-      <section id="contact">
-        <div className="ContactMe">
+      <section id="contact" ref={ref}>
+        <div
+          className="ContactMe"
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
           <Arrow tittle="Contact Me" />"
           <p>If you enjoyed my profile, I can be found on ...</p>
           <ul className="Footer">
