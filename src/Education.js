@@ -11,8 +11,16 @@ import "./Education.css";
 import Arrow from "./reuse_components/Arrow";
 import Data from "./models/Data.ts";
 import Information from "./reuse_components/Information";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Education() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: "all",
+    once: true,
+  });
+
   const educations = [
     new Data(
       "2022",
@@ -82,10 +90,19 @@ export default function Education() {
   };
 
   return (
-    <section id="education">
+    <section id="education" ref={ref}>
       <div className="sectionInformation">
-        <Arrow tittle="Education" />
-        <Row>{renderEducation(educations)}</Row>
+        <Arrow tittle="Education" />{" "}
+        <div
+          className="animationRendering"
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <Row>{renderEducation(educations)}</Row>
+        </div>
       </div>
     </section>
   );

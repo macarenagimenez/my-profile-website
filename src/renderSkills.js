@@ -4,8 +4,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Skills.css";
 import Arrow from "./reuse_components/Arrow.js";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
-export default function renderSkills(props) {
+export default function RenderSkills(props) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: "all",
+    once: true,
+  });
+
   let skills = [
     {
       name: "Programming",
@@ -54,9 +62,19 @@ export default function renderSkills(props) {
   };
 
   return (
-    <div className="Skills" id="skills">
-      <Arrow tittle="Skills" />
-      <Row>{renderSkills(skills)}</Row>
-    </div>
+    <section ref={ref}>
+      <div className="Skills" id="skills">
+        <Arrow tittle="Skills" />
+        <div
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <Row>{renderSkills(skills)}</Row>
+        </div>
+      </div>
+    </section>
   );
 }
