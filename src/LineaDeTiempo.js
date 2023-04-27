@@ -1,15 +1,15 @@
 import React from "react";
 import "./LineadeTiempo.css";
 import Arrow from "./reuse_components/Arrow";
-import { useInView, motion, useScroll } from "framer-motion";
+import { useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 
 export default function LineadeTiempo() {
   const ref = useRef(null);
-  const { scrollXProgress } = useScroll({ container: ref });
-  // const isInView = useInView(ref, {
-  //   amount: "some",
-  // });
+  useScroll({ container: ref });
+  const isInView = useInView(ref, {
+    amount: "some",
+  });
 
   return (
     <div>
@@ -18,11 +18,11 @@ export default function LineadeTiempo() {
           <Arrow tittle="Timeline" />
 
           <div
-            // style={{
-            //   transform: isInView ? "none" : "translateX(-200px)",
-            //   opacity: isInView ? 1 : 0,
-            //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-            // }}
+            style={{
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
             className="Timeline"
           >
             <ul ref={ref}>
