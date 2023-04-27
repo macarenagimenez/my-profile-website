@@ -1,13 +1,51 @@
-.Timeline {
+#timeline {
   width: 70%;
   margin: 0 auto;
 }
 
-img {
+/* img {
   margin-bottom: 20px;
   display: inline;
+} */
+.Timeline {
+  --accent: #f0be14;
+
+  color: var(--accent);
+  padding-bottom: 100px;
 }
 
-.scrollingHorizontal {
-  overflow-x: auto;
+ul {
+  display: flex;
+  list-style: none;
+  height: 350px;
+  overflow-x: scroll;
+  padding: 20px 0;
+  flex: 0 0 600px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+li {
+  flex: 0 0 200px;
+  /* background: var(--accent); */
+  /* margin: 0 20px 0 0; */
+}
+
+li:last-of-type {
+  margin: 0;
 }
