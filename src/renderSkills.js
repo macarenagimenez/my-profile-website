@@ -10,7 +10,7 @@ import { useRef } from "react";
 export default function RenderSkills(props) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: "all",
+    amount: "some",
     once: true,
   });
 

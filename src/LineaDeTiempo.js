@@ -10,7 +10,7 @@ export default function LineadeTiempo() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     amount: "all",
-    once: true,
+    once: some,
   });
 
   return (
