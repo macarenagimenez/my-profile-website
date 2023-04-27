@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "react-bootstrap";
 import "./AboutMe.css";
 import Arrow from "./reuse_components/Arrow.js";
-import { motion } from "framer-motion";
+
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -50,19 +50,6 @@ export default function AboutMe() {
     <>
       {" "}
       <section ref={ref}>
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.3,
-            ease: [0, 0.71, 0.2, 1.01],
-            scale: {
-              type: "spring",
-
-              stiffness: 100,
-            },
-          }}
-        > */}
         <div id="aboutme" className="AboutMe">
           <Arrow tittle="About Me" />
           <div
@@ -75,7 +62,6 @@ export default function AboutMe() {
             <Row className="Description">{renderDescription}</Row>{" "}
           </div>
         </div>{" "}
-        {/* </motion.div>{" "} */}
       </section>
     </>
   );
