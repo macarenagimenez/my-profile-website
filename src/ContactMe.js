@@ -23,7 +23,7 @@ export default function ContactMe() {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <Arrow tittle="Contact Me" />"
+          <Arrow tittle="Contact Me" />
           <p>If you enjoyed my profile, I can be found on ...</p>
           <ul className="Footer">
             <li className="button">
