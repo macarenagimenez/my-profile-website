@@ -28,7 +28,7 @@ export default function Projects() {
       "https://gaiacirila.com.ar/",
       "An E-Commerce created for my own business with React.",
       faGithub,
-      "https://github.com/macarenagimenez/cirila-usuario",
+      "https://github.com/macarenagimenez/cirila_usuario_vite",
       "You could see it on GitHub"
     ),
     new Data(
