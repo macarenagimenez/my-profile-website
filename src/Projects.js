@@ -25,7 +25,7 @@ export default function Projects() {
       null,
       faStore,
       "Gaia Cirila E-Commerce (building)",
-      "https://mellifluous-clafoutis-5ec563.netlify.app/",
+      "https://gaiacirila.com.ar/",
       "An E-Commerce created for my own business with React.",
       faGithub,
       "https://github.com/macarenagimenez/cirila-usuario",
