@@ -24,7 +24,7 @@ export default function Projects() {
       "2023",
       null,
       faStore,
-      "Gaia Cirila E-Commerce (building)",
+      "Gaia Cirila E-Commerce (only desktop)",
       "https://gaiacirila.com.ar/",
       "An E-Commerce created for my own business with React.",
       faGithub,
