@@ -36,7 +36,26 @@ h4 {
 }
 
 @media (max-width: 480px) {
-  .MyPhoto {
+  .contenedorBienvenida {
+    /* background-image: url("/public/images/MacarenaGimenez1-01.jpg"); */
+
+    position: relative;
+  }
+  .contenedorTextoHeader {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+  }
+  .mensajeBienvenidaNombre {
+    font-size: 20px;
+  }
+
+  .mensajeBienvenidaDescripcion {
+    font-size: 12px;
+    font-style: italic;
+  }
+  /* .MyPhoto {
     max-width: fit-content;
     position: relative;
     top: 100px;
@@ -59,5 +78,37 @@ h4 {
   h4 {
     letter-spacing: 1px;
     font-weight: 500;
-  }
+  } */
+}
+
+.contenedorBienvenida {
+  /* background-image: url("/public/images/MacarenaGimenez1-01.jpg"); */
+
+  width: 100%;
+  margin-top: 50px;
+}
+
+.imagenBienvenida {
+  width: 100%;
+  border-radius: 400px 0px 0px 400px;
+}
+
+.contenedorTextoHeader {
+  margin-top: 30%;
+  margin-right: 10px;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+}
+.mensajeBienvenidaNombre {
+  font-weight: 800;
+  font-family: quicksand;
+}
+.mensajeBienvenidaPuesto {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mensajeBienvenidaDescripcion {
+  font-style: italic;
 }

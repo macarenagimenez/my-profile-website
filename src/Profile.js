@@ -32,7 +32,7 @@ export default function Profile() {
       >
         <Container>
           <Navbar.Brand href="#home" className="Name">
-            macu gimenez.
+            maca gimenez.
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="Menu">

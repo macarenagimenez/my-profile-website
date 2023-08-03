@@ -3,7 +3,7 @@
 }
 .Name {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   color: #eee1d8;
 }
 
@@ -15,9 +15,10 @@
   text-align: right;
   display: flex;
   justify-content: right;
+  font-size: 15px;
 }
 .Menu li {
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 10px;
   letter-spacing: 1px;
 }
@@ -33,6 +34,7 @@
   height: 10px;
   background: #df6730;
   transform-origin: 0%;
+  z-index: 3;
 }
 
 .active {

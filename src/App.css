@@ -3,5 +3,8 @@
   font-family: "Quicksand", sans-serif;
   width: 100%;
   margin: auto;
-  background: #eee1d8;
+}
+body {
+  background: #efe9e4;
+  color: #5e5343;
 }
