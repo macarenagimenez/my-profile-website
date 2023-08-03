@@ -6,15 +6,26 @@
     color: white;
     position: absolute;
     bottom: 10px;
-    left: 5px;
+    left: 10px;
   }
   .mensajeBienvenidaNombre {
-    font-size: 20px;
+    font-size: 25px !important;
+    padding: 0px 28px 0px 5px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #5e5343 !important;
   }
-
+  .mensajeBienvenidaPuesto {
+    font-size: 10px;
+    padding: 0px 28px 0px 5px;
+    background-color: #5e5343 !important;
+    border-radius: 0px 20px 20px 0px;
+  }
   .mensajeBienvenidaDescripcion {
     font-size: 12px;
     font-style: italic;
+    background-color: #5e5343 !important;
+    padding: 0px 28px 0px 5px;
+    border-radius: 0px 20px 20px 0px;
   }
 }
 
@@ -31,13 +42,14 @@
 .contenedorTextoHeader {
   margin-top: 30%;
   margin-right: 10px;
-  text-align: end;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
+  text-align: end;
 }
 .mensajeBienvenidaNombre {
+  font-size: 35px;
   font-weight: 800;
-  font-family: "Quicksand", sans-serif;
 }
 .mensajeBienvenidaPuesto {
   font-size: 20px;

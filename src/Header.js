@@ -10,11 +10,12 @@ export default function Header() {
         <Col xs={4} sm>
           {" "}
           <div className="contenedorTextoHeader">
-            <h1 className="mensajeBienvenidaNombre">MACA GIMENEZ,</h1>
+            <p className="mensajeBienvenidaNombre">MACA_GIMENEZ</p>
             <p className="mensajeBienvenidaPuesto">Front End Developer.</p>{" "}
             <p className="mensajeBienvenidaDescripcion">
               "Making ideas a reality."
             </p>
+            <hr />
           </div>
         </Col>
         <Col xs={8} sm>
