@@ -19,7 +19,7 @@ export default function Header() {
         </Col>
         <Col xs={8} sm>
           <img
-            src="/images/MacarenaGimenez2.png"
+            src="/images/MacarenaGimenez2.jpg"
             className="imagenBienvenida"
             alt="MacarenaGimenez"
           ></img>
