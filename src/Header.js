@@ -21,6 +21,7 @@ export default function Header() {
           <img
             src="/images/MacarenaGimenez2.png"
             className="imagenBienvenida"
+            alt="MacarenaGimenez"
           ></img>
         </Col>
       </Row>
