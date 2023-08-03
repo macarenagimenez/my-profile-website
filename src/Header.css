@@ -1,44 +1,5 @@
-.Header {
-  max-width: 70%;
-  margin: auto;
-  margin-top: 50px;
-}
-
-.Hello {
-  max-width: 100%;
-}
-
-.Me {
-  max-width: 100%;
-}
-
-.MyPhoto {
-  display: flex;
-  justify-content: flex-end;
-  border-radius: 300px;
-  background: #f8afa0;
-  max-width: 100%;
-  inline-size: -webkit-fill-available;
-}
-
-.arrow {
-  color: white;
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-h4 {
-  font-style: italic;
-  text-align: center;
-  margin-top: 30px;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
 @media (max-width: 480px) {
   .contenedorBienvenida {
-    /* background-image: url("/public/images/MacarenaGimenez1-01.jpg"); */
-
     position: relative;
   }
   .contenedorTextoHeader {
@@ -55,35 +16,9 @@ h4 {
     font-size: 12px;
     font-style: italic;
   }
-  /* .MyPhoto {
-    max-width: fit-content;
-    position: relative;
-    top: 100px;
-    left: 0px;
-  }
-
-  .Hello {
-    max-width: 80%;
-    position: relative;
-    top: -300px;
-    left: 0px;
-  }
-
-  .Me {
-    max-width: 100%;
-    position: relative;
-    top: -90px;
-    left: 0px;
-  }
-  h4 {
-    letter-spacing: 1px;
-    font-weight: 500;
-  } */
 }
 
 .contenedorBienvenida {
-  /* background-image: url("/public/images/MacarenaGimenez1-01.jpg"); */
-
   width: 100%;
   margin-top: 50px;
 }
@@ -102,7 +37,7 @@ h4 {
 }
 .mensajeBienvenidaNombre {
   font-weight: 800;
-  font-family: quicksand;
+  font-family: "Quicksand", sans-serif;
 }
 .mensajeBienvenidaPuesto {
   font-size: 20px;
