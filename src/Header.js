@@ -54,7 +54,7 @@ export default function Header() {
             <h1 className="mensajeBienvenidaNombre">MACA GIMENEZ,</h1>
             <p className="mensajeBienvenidaPuesto">Front End Developer.</p>{" "}
             <p className="mensajeBienvenidaDescripcion">
-              "Transformando ideas en realidad."
+              "Making ideas a reality."
             </p>
           </div>
         </Col>
