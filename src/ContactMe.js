@@ -23,8 +23,9 @@ export default function ContactMe() {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <Arrow tittle="Contact Me" />
-          <p>If you enjoyed my profile, I can be found on ...</p>
+          <hr />
+          <h2> Contact Me!</h2>
+          <p>I hope we can work together!</p>
           <ul className="Footer">
             <li className="button">
               <a
@@ -45,13 +46,13 @@ export default function ContactMe() {
 
             <li className="button buttonEmail ">
               {" "}
-              <div
+              <a
                 onClick={(e) => {
-                  window.location.href = "mailto:macuugimenez@gmail.com";
+                  window.location.href = "mailto:gimenez.macarena@outlook.com";
                 }}
               >
                 <FontAwesomeIcon icon={faEnvelope} /> E-mail{" "}
-              </div>
+              </a>
             </li>
           </ul>
           <div className="Author">

@@ -5,27 +5,39 @@
   .contenedorTextoHeader {
     color: white;
     position: absolute;
-    bottom: 10px;
+    bottom: 60px;
     left: 10px;
   }
   .mensajeBienvenidaNombre {
     font-size: 25px !important;
     padding: 0px 28px 0px 5px;
     border-radius: 0px 20px 20px 0px;
-    background-color: #5e5343 !important;
+    background-color: #d1c8c1 !important;
   }
   .mensajeBienvenidaPuesto {
     font-size: 10px;
     padding: 0px 28px 0px 5px;
-    background-color: #5e5343 !important;
+    background-color: #d1c8c1 !important;
     border-radius: 0px 20px 20px 0px;
   }
   .mensajeBienvenidaDescripcion {
     font-size: 12px;
     font-style: italic;
-    background-color: #5e5343 !important;
+    background-color: #d1c8c1 !important;
     padding: 0px 28px 0px 5px;
     border-radius: 0px 20px 20px 0px;
+  }
+
+  .botonContacto {
+    border: 0px;
+    font-size: 12px !important;
+    padding: 5px 30px;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px auto 0px !important;
+    color: white;
+    background-color: #d1c8c1;
+    text-align: end;
   }
 }
 
@@ -58,4 +70,16 @@
 
 .mensajeBienvenidaDescripcion {
   font-style: italic;
+}
+
+.botonContacto {
+  border: 0px;
+  font-size: 20px;
+  padding: 5px 30px;
+  border-radius: 20px;
+  display: flex;
+  margin: 50px auto 0px;
+  color: white;
+  background-color: #d1c8c1;
+  text-align: end;
 }

@@ -44,15 +44,8 @@ export default function Profile() {
               </Nav.Link>{" "}
               <Nav.Link>
                 {" "}
-                <Link activeClass="active" spy to="timeline">
-                  {" "}
-                  TIMELINE
-                </Link>{" "}
-              </Nav.Link>{" "}
-              <Nav.Link>
-                {" "}
                 <Link activeClass="active" spy to="projects">
-                  PROJECTS & EXPERIENCE
+                  PROJECTS
                 </Link>{" "}
               </Nav.Link>{" "}
               <Nav.Link>
@@ -60,17 +53,6 @@ export default function Profile() {
                 <Link activeClass="active" spy to="skills">
                   SKILLS
                 </Link>
-              </Nav.Link>
-              <Nav.Link>
-                {" "}
-                <Link activeClass="active" spy to="education">
-                  EDUCATION
-                </Link>{" "}
-              </Nav.Link>
-              <Nav.Link>
-                <Link activeClass="active" spy to="hobbies">
-                  HOBBIES
-                </Link>{" "}
               </Nav.Link>
               <Nav.Link>
                 {" "}

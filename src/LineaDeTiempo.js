@@ -14,9 +14,7 @@ export default function LineadeTiempo() {
   return (
     <div>
       <section id="timeline" ref={ref}>
-        <div>
-          <Arrow tittle="Timeline" />
-
+        <div className="contenedorLineaDeTiempo">
           <div
             style={{
               transform: isInView ? "none" : "translateX(-200px)",
@@ -66,7 +64,7 @@ export default function LineadeTiempo() {
                   className="TimelineImg"
                 />{" "}
               </li>
-              <li>
+              <li id="laUltima">
                 {" "}
                 <img
                   src="/images/timeline-06.svg"

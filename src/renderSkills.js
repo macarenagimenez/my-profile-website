@@ -15,14 +15,19 @@ export default function RenderSkills(props) {
 
   let skills = [
     {
-      name: "Programming",
+      name: "Tech",
       text: [
         "React",
         "Javascript",
+        "TypeScript",
+        "Rest APIs",
         "CSS",
-        "Git",
         "Bootstrap",
+        "Material UI",
+        "AWS amplify",
+        "Git",
         "Figma",
+
         "Illustrator",
         "Photoshop",
       ],
@@ -63,7 +68,7 @@ export default function RenderSkills(props) {
   return (
     <section ref={ref}>
       <div className="Skills" id="skills">
-        <Arrow tittle="Skills" />
+        <Arrow tittle="Some skills acquired" />
         <div
           style={{
             transform: isInView ? "none" : "translateX(-200px)",

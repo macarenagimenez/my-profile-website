@@ -21,11 +21,18 @@
   margin-right: 20px;
   letter-spacing: 1px;
   margin-top: 8px;
+  text-align: center;
+}
+.button a {
+  color: #5e5343;
 }
 
 .buttonEmail:hover {
   cursor: pointer;
   color: #f0be15;
+}
+li:last-of-type {
+  margin-top: 8px;
 }
 
 .Author p {

@@ -1,12 +1,12 @@
 #timeline {
+  background-color: #e3dfdb;
+  padding-top: 30px;
+}
+.contenedorLineaDeTiempo {
   width: 70%;
   margin: 0 auto;
 }
 
-/* img {
-  margin-bottom: 20px;
-  display: inline;
-} */
 .Timeline {
   --accent: #f0be14;
 
@@ -46,8 +46,8 @@ li {
   /* margin: 0 20px 0 0; */
 }
 
-li:last-of-type {
-  margin: 0;
+#laUltima {
+  margin-top: 0;
 }
 
 @media (max-width: 480px) {

@@ -1,14 +1,17 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   faSpellCheck,
   faStore,
   faTemperatureHalf,
+  faCalendarDays,
+  faHandPointRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Projects.css";
 import Arrow from "./reuse_components/Arrow";
-import Information from "./reuse_components/Information";
+
 import Data from "./models/Data.ts";
 import { Col, Row } from "react-bootstrap";
 import { useInView } from "framer-motion";
@@ -22,33 +25,33 @@ export default function Projects() {
   const projects = [
     new Data(
       "2023",
-      null,
+      "images/imagendepaginaparaLinkedin.jpg",
       faStore,
-      "Gaia Cirila E-Commerce (only desktop)",
+      "Gaia Cirila E-Commerce",
       "https://gaiacirila.com.ar/",
-      "An E-Commerce created for my own business with React.",
+      "Real project.",
       faGithub,
       "https://github.com/macarenagimenez/cirila_usuario_vite",
       "You could see it on GitHub"
     ),
     new Data(
       "2022",
-      null,
+      "images/capturaAppClima.jpg",
       faTemperatureHalf,
       "Weather App",
       "https://shiny-semifreddo-aa62d2.netlify.app//",
-      "A Weather App created for SheCodes with React.",
+      "Practice project",
       faGithub,
       "https://github.com/macarenagimenez/react-final-",
       "You could see it on GitHub"
     ),
     new Data(
       "2022",
-      null,
+      "images/capturaAppDiccionario.jpg",
       faSpellCheck,
       "Dictionary App",
       "https://soft-valkyrie-a6aceb.netlify.app",
-      "A Dictionary App created for SheCodes with React.",
+      "Practice project.",
       faGithub,
       "https://github.com/macarenagimenez/dictionary-project",
       "You could see it on GitHub"
@@ -59,17 +62,45 @@ export default function Projects() {
     let content = [];
     for (let i = 0; i < projects.length; i++) {
       content.push(
-        <Col className="renderInformation" sm>
-          <Information
-            year={projects[i].year}
-            iconName={projects[i].iconName}
-            url={projects[i].url}
-            name={projects[i].name}
-            description={projects[i].description}
-            icon={projects[i].icon}
-            gitHub={projects[i].gitHub}
-            origin={projects[i].origin}
-          />
+        <Col sm>
+          <div className="columnaProyectos">
+            {" "}
+            <button className="botonProyecto">
+              {" "}
+              <a href={projects[i].url} target="_blank">
+                {" "}
+                <img src={projects[i].img} />
+              </a>
+            </button>{" "}
+            <div className="contenedorDescriptionProyectos">
+              <strong>
+                <FontAwesomeIcon icon={faCalendarDays} /> {projects[i].year}
+                <br />
+                <FontAwesomeIcon icon={projects[i].iconName} />
+                <a
+                  href={projects[i].url}
+                  target="_blank"
+                  className="nombreProyecto"
+                >
+                  {" "}
+                  {projects[i].name}
+                </a>{" "}
+              </strong>{" "}
+              <br />
+              <small>Design and development.</small>
+              <br />
+              <br />
+              <FontAwesomeIcon icon={faHandPointRight} />{" "}
+              {projects[i].description}
+              <br />
+              <FontAwesomeIcon icon={projects[i].icon} />{" "}
+              <a href={projects[i].gitHub} target="blank">
+                {" "}
+                GitHub.
+              </a>{" "}
+              <br />
+            </div>
+          </div>
         </Col>
       );
     }
@@ -78,8 +109,8 @@ export default function Projects() {
 
   return (
     <section id="projects" ref={ref}>
-      <div className="sectionInformation">
-        <Arrow tittle="Projects" />
+      <div className="secctionProjects">
+        <Arrow tittle="Some examples from my creative work." />
         <div
           style={{
             transform: isInView ? "none" : "translateX(-200px)",
