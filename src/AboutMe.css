@@ -30,3 +30,9 @@
     border-radius: 20px;
   }
 }
+.descriptionThingAboutMe {
+  text-align: center;
+  border: 3px solid #d1c8c1;
+  padding: 100px 10px 0px 10px;
+  margin: 10px 20px;
+}

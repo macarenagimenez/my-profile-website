@@ -6,3 +6,9 @@
   margin: 0;
   border: 5px solid white;
 }
+
+.contenedorDatosCuriosos {
+  border: 3px solid #d1c8c1;
+  padding: 20px;
+  margin-top: 30px;
+}

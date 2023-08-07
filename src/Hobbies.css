@@ -1,52 +1,51 @@
-.Hobbies {
-  max-width: 70%;
-  margin: auto;
-}
-
-.HobbiesDescription {
-  text-align: center;
-  max-width: 600px;
-  margin: auto;
-}
-.Hobbies p {
-  background-color: white;
-  border-radius: 20px;
-  padding: 20px;
-  line-height: 30px;
-  font-size: 16px;
-  box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-}
-
-.photos {
-  background-color: #f8afa0 !important;
-  box-shadow: none !important;
-}
-
-.Carrousel {
-  width: 70%;
-  margin: auto;
-}
-
-img {
-  margin-top: 0 !important;
-}
 @media (max-width: 480px) {
   .Hobbies {
     max-width: 80%;
     margin: 50px auto;
   }
-  .Hobbies p {
-    background-color: white;
-    border-radius: 20px;
-    padding: 15px;
-    line-height: 25px;
-    font-size: 14px;
+  .imagenParaHobbie {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
   }
+  .imagenParaHobbie img {
+    width: 100% !important;
+  }
+}
+.Hobbies {
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
-  .Carrousel {
-    width: 100%;
-    margin: auto;
-  }
+.imagenParaHobbie {
+  height: 300px;
+}
+.imagenParaHobbie img {
+  width: -webkit-fill-available;
+}
+
+.imagenParaHobbie_viajar,
+.imagenParaHobbie_fotografia,
+.imagenParaHobbie_comida,
+.imagenParaHobbie_perro {
+  width: 100%;
+  height: 300px;
+  margin: 5px 0 5px;
+  background-position: center;
+  background-size: cover;
+}
+
+.imagenParaHobbie_viajar {
+  background-image: url("/public/images/imagenViajar.jpg");
+}
+.imagenParaHobbie_fotografia {
+  background-image: url("/public/images/fotografia.jpg");
+}
+.imagenParaHobbie_comida {
+  background-image: url("/public/images/imagenPastas.jpg");
+}
+
+.imagenParaHobbie_perro {
+  background-image: url("/public/images/imagenPerros.jpg");
 }

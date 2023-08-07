@@ -10,12 +10,12 @@ export default function Header() {
         <Col xs={4} sm>
           {" "}
           <div className="contenedorTextoHeader">
-            <p className="mensajeBienvenidaNombre">MACA_GIMENEZ</p>
+            <p className="mensajeBienvenidaNombre">MACA GIMENEZ</p>
             <p className="mensajeBienvenidaPuesto">Front End Developer.</p>{" "}
+            <hr />{" "}
             <p className="mensajeBienvenidaDescripcion">
-              "Making ideas a reality."
+              "I am a fan of making ideas come to life."
             </p>
-            <hr />
           </div>
         </Col>
         <Col xs={8} sm>
@@ -25,7 +25,16 @@ export default function Header() {
             alt="MacarenaGimenez"
           ></img>
         </Col>
-      </Row>
+      </Row>{" "}
+      <button
+        className="botonContacto"
+        onClick={(e) => {
+          window.location.href = "mailto:gimenez.macarena@outlook.com";
+        }}
+      >
+        {" "}
+        Let's start working together by writing to me!
+      </button>
     </div>
   );
 }

@@ -1,13 +1,15 @@
-.Education {
+#education {
+  background-color: #e3dfdb;
+  padding: 20px 0px;
+}
+.sectionEducation {
   max-width: 80%;
   margin: auto;
+  color: #5e5343;
 }
 .Education p {
   text-align: center;
-  /* background-color: white; */
-  /* box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -webkit-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35);
-  -moz-box-shadow: 5px 4px 5px 0px rgba(140, 138, 138, 0.35); */
+
   border-radius: 20px;
   border: 1px solid grey;
   font-size: 17px;
@@ -17,11 +19,6 @@
   margin-bottom: 20px;
 }
 
-/* .animationRendering {
-  transform: translateX(-100px);
-  opacity: 0;
-} */
-
 @media (max-width: 480px) {
   .Education p {
     font-size: 14px;
@@ -29,4 +26,25 @@
     border-radius: 20px;
     margin: 8px;
   }
+  .contenedorEducacion {
+    padding: 0px !important;
+  }
+  .columnaEducacion {
+    margin: 20px 10px !important;
+  }
+  .columnaEducacion h1 {
+    text-align: left !important;
+  }
+}
+
+.contenedorEducacion {
+  padding: 20px 150px 50px 150px;
+}
+
+.columnaEducacion {
+  border-left: 3px solid #d1c8c1;
+  margin: 0px 10px;
+}
+.columnaEducacion h1 {
+  text-align: center;
 }
