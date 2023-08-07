@@ -47,7 +47,7 @@ export default function ContactMe() {
             <li className="button buttonEmail ">
               {" "}
               <a
-                href=""
+                href="#"
                 rel="noreferrer"
                 onClick={(e) => {
                   window.location.href = "mailto:gimenez.macarena@outlook.com";
