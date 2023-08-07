@@ -15,7 +15,7 @@ export default function Experience() {
 
   return (
     <section id="#" ref={ref}>
-      <div className="sectionInformation">
+      <div className="sectionExperience">
         <Arrow tittle="Three curious facts" />
         <div
           style={{

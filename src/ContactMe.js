@@ -46,15 +46,13 @@ export default function ContactMe() {
 
             <li className="button buttonEmail ">
               {" "}
-              <a
-                href="#"
-                rel="noreferrer"
+              <p
                 onClick={(e) => {
                   window.location.href = "mailto:gimenez.macarena@outlook.com";
                 }}
               >
                 <FontAwesomeIcon icon={faEnvelope} /> E-mail{" "}
-              </a>
+              </p>
             </li>
           </ul>
           <div className="Author">
