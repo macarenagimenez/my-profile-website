@@ -67,10 +67,9 @@ export default function Projects() {
             {" "}
             <button className="botonProyecto">
               {" "}
-              <a href={projects[i].url} target="_blank">
+              <a href={projects[i].url} target="_blank" rel="noreferrer">
                 {" "}
                 <img src={projects[i].img} alt={projects[i].name} />
-                />
               </a>
             </button>{" "}
             <div className="contenedorDescriptionProyectos">
