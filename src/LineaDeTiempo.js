@@ -1,6 +1,6 @@
 import React from "react";
 import "./LineadeTiempo.css";
-import Arrow from "./reuse_components/Arrow";
+
 import { useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 

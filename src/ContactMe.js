@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./ContactMe.css";
-import Arrow from "./reuse_components/Arrow";
+
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 export default function ContactMe() {
@@ -47,6 +47,7 @@ export default function ContactMe() {
             <li className="button buttonEmail ">
               {" "}
               <a
+                rel="noreferrer"
                 onClick={(e) => {
                   window.location.href = "mailto:gimenez.macarena@outlook.com";
                 }}
