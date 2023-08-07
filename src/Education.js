@@ -1,17 +1,10 @@
 import React from "react";
 
-import {
-  faBuildingColumns,
-  faCode,
-  faBookOpen,
-  faRuler,
-  faCalendar,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode, faRuler, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row } from "react-bootstrap";
 import "./Education.css";
 import Arrow from "./reuse_components/Arrow";
-import Data from "./models/Data.ts";
-import Information from "./reuse_components/Information";
+
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
